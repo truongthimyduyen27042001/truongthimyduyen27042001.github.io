@@ -1,0 +1,102 @@
+*{
+    margin : 0;
+    background-color: #282d30 ;
+    font-family:'Shippori Mincho B1',serif;
+    color: #f48847;
+}
+.container{
+    width:100%;
+    background-color: #282d30;
+}
+.navbar{
+    display:flex;
+    color : #f48847 ;
+}
+.nav-left{
+    width:33%;
+    display:flex;
+    color: #f48847;
+}
+.nav-left>a{
+    padding:20px;
+}
+.nav-center{
+    width:33%;
+    text-align : center;
+}
+.nav-icon{
+    width:33%;
+    text-align:right;
+    padding:20px;
+}
+.nav-icon>i{
+    padding:20px;
+}
+.title{
+    margin :20px;
+    padding: 50px;
+    background-color:  #282d30;
+}
+.content{
+    margin : 50px;
+    font-size:80px;
+    text-align: center;
+
+}
+.paragraph{
+    margin :20px;
+    font-size:20px;
+    text-align:center;
+}
+.pic{
+    margin :50px;
+    text-align:center;
+    font-size:medium;
+}
+.text{
+    margin : 400px;
+    font-size:larger;
+
+    text-align:left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color : #fff imo !important;
+   
+}
+.test > p {
+    text-align : left;
+    line-height: 200px;
+    color : #fff;
+}
+
+.footer{
+  color:#fff;
+    margin-top: 100px;
+    
+  width : 100%;
+
+}
+.footer-icon{
+    width:50%;
+    text-align:right;
+    padding:20px;
+}
+.footer-icon > i {
+    padding : 20px;
+    text-align : center;
+    
+}
+.textt{
+   margin : 50px;
+   padding-left:550px;
+  
+}
+.box{
+    margin: 50px;
+    margin-left:80px;
+    margin-bottom:100px;
+    width:50%;
+    text-align:right;
+    font-size:large;
+    color:#fff;
+}
