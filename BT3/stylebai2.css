@@ -1,12 +1,13 @@
 .container{
 display:flex;
 flex-wrap:wrap;
-box-sizing: border-box;
+box-sizing: content-box;
+text-align: center;
 }
+
 .box{
     width:40%;
-    margin:50px;
-    text-align:center;
+   margin:50px;
     /* dạng trình bày :  */
     display:flex;
     /* hướng trình bày */
@@ -22,18 +23,25 @@ box-sizing: border-box;
     border-bottom:1px solid black;
 }
 img{
-    width:600px;
-    height:600px;
+    
     object-fit:contain;
 }
 .day{
-    margin:20px;
+    margin:5px;
     opacity:0.5;
 
 }
 .pic>img{
-    width:100%;
+    width:500px;
+    height:500px;
+    margin:50px;
 
+
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
+    font-size:50px;
+    margin : 10px;
 }
 .icon{
     margin:50px;
@@ -43,4 +51,15 @@ img{
 }
 .icon > p{
     margin:0px 9px ;
+    font-family: 'Karla', sans-serif;
+
+}
+.text{
+    font-family: 'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:20px;
+}
+.day{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
 }
