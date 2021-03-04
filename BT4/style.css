@@ -1,16 +1,16 @@
 .container{
     width:100%;
-    height:1000px;
+    height:800px;
    
 }
 .navbar{
     width:100%;
     height:80px;
-    background-color: #1c1e21;
+    background-color: rgba(36,37,38,255);
     font-size:25px;
     display:flex;
     box-sizing: margin-box;
-    border-bottom: 2px solid #CCCCCC;;
+    border-bottom: 3px solid #313233;
     
 }
 .nav-left{
@@ -35,6 +35,8 @@
     padding:10px;
     font-size:20px;
     border-radius: 25px;
+    background-color:rgba(58,59,60,255);
+    color:rgba(149,151,156,255);
 }
 timkiem::-webkit-input-placeholder {
     font-size: 20px;
@@ -47,9 +49,12 @@ timkiem::-webkit-input-placeholder {
     justify-content: space-around;
     align-items: center;
     color: #8D949E;
+    font-size:25px;
+
 }
 .nav-icon > i {
-    font-size:25px;
+    font-size:20px;
+    color:#86888c;
 }
 .nav-right{
     width:30%;
@@ -58,14 +63,17 @@ timkiem::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items:center;
+    
 }
 .icon-ava{
-    width:150px;
+    width:180px;
     height:50px;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    background-color: #253851;
+   
 }
 .icon-ava > img{
     width: 40px;
@@ -76,7 +84,8 @@ timkiem::-webkit-input-placeholder {
 .icon-ava > p{
     margin:10px;
     font-size:20px;
-    
+    color: #2d86fa
+   
 }
 .nav-icon{
     width:300px;
@@ -84,24 +93,26 @@ timkiem::-webkit-input-placeholder {
     display:flex;
     justify-content: space-around;
     align-items: center;
+    color: #a3a5aa;
 }
 .content{
     width:100%;
-    height : 400px;
-    background-color:#303338;
+    height : 300px;
+    background-color:rgba(36,37,38,255);
     display:flex;
     justify-content: center;
     align-items: flex-start;
 }
 .content-box{
     width:70%;
-    height:400px;
+    height:300px;
     background-color: #1c1e21;
     display:flex;
     justify-content: center;
     align-items: flex-end;
     margin:0px;
     position:relative;
+    border-radius: 7px;
 
 }
 .ava{
@@ -122,16 +133,31 @@ timkiem::-webkit-input-placeholder {
     border: 2px solid gray ;
     
 }
-.ava i{
+
+
+.cam{
+    width: 35px;
+    height:35px;
+    background-color : #fff;
+    opacity:0.2;
     font-size:20px;
-    color:#fff;
     position:relative;
     left:-30px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.cam > i {
+    color: #8D949E;
+    opacity:1;
+    z-index: 3;
 }
 .cover-img{
     width:150px;
     height:35px;
-    border-radius:5px;
+    border-radius:7px;
     background-color: #8D949E;
     opacity: 0.6;
     position:relative;
@@ -144,6 +170,8 @@ timkiem::-webkit-input-placeholder {
     color:#fff;
     font-size:18px;
     z-index: 0;
+    position:relative;
+    top:-20px;
 }
 .cover > i p {
     opacity: 1;
@@ -153,16 +181,15 @@ timkiem::-webkit-input-placeholder {
 .name{
     width:100%;
     height:150px;
-    background-color: #303338;
+    background-color: rgba(36,37,38,255);
     display:flex;
     justify-content: center;
     align-items: flex-start;
-    border-bottom:5px solid #303338;
 }
 .ten{
     width:800px;
-    height:150px;
-    background-color: #303338;
+    height:120px;
+    background-color: rgba(36,37,38,255);
     text-align: center;
     border-bottom:3px solid black;
     
@@ -170,46 +197,52 @@ timkiem::-webkit-input-placeholder {
 
 
 #p1{
-    font-size:30px;
-    color:#fff;
-}
-.story{
-    font-size:20px;
+    font-size:28px;
     color:#fff;
     position:relative;
-    top:-28px;
+    top:-10px;
+}
+.story{
+    font-size:18px;
+    color:#fff;
+    position:relative;
+    top:-32px;
 }
 .chinhsua{
     font-size:18px;
     color:#2E89FF;
     position:relative;
-    top:-28px;
+    top:-45px;
 }
 .footer{
     width:100%;
-    height:150px;
-    background-color:#303338;
+    height:50px;
+    background-color:rgba(36,37,38,255);
     display:flex;
     justify-content: center;
     align-items: flex-start;
 }
 .box{
     width:900px;
-    height:80px;
-    background-color: yellow;
+    height:40px;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    
+    background-color:rgba(36,37,38,255);
+   
 }
 .box1{
     width:500px;
-    height:80px;
-    background-color:#303338;
+    height:40px;
+    background-color:rgba(36,37,38,255);
     display:flex;
     justify-content: space-around;
     align-items: center;
     color:#fff;
     font-size:17px;
+   
+  
     
 }
 .friend{
@@ -234,11 +267,12 @@ timkiem::-webkit-input-placeholder {
 
 .box2{
     width:400px;
-    height:80px;
-    background-color:#303338;
+    height:40px;
+    background-color:rgba(36,37,38,255);
     display:flex;
     justify-content: flex-start;
     align-items: center;
+   
 }
 .add{
     width:120px;
