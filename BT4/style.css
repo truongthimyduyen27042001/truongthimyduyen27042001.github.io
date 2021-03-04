@@ -26,6 +26,12 @@
 .nav-left > i{
     margin:20px;
     justify-content: center;
+    font: size 24px;px;
+    color:#1197f5;
+    font-size:24px;
+}
+.nav-left > i:hover{
+    opacity:0.5;
 }
 .nav-left > .timkiem{
     margin:20px;    
@@ -33,14 +39,10 @@
 
 .timkiem{
     padding:10px;
-    font-size:20px;
+    font-size:18px;
     border-radius: 25px;
     background-color:rgba(58,59,60,255);
     color:rgba(149,151,156,255);
-}
-timkiem::-webkit-input-placeholder {
-    font-size: 20px;
-    line-height: 3;
 }
 .nav-center{
     width: 40%;
@@ -49,8 +51,11 @@ timkiem::-webkit-input-placeholder {
     justify-content: space-around;
     align-items: center;
     color: #8D949E;
-    font-size:25px;
+    font-size:24px;
 
+}
+.nav-center>i:hover {
+    opacity:0.5;
 }
 .nav-icon > i {
     font-size:20px;
@@ -63,6 +68,7 @@ timkiem::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items:center;
+   
     
 }
 .icon-ava{
@@ -75,15 +81,19 @@ timkiem::-webkit-input-placeholder {
     background-color: #253851;
    
 }
+.icon-ava:hover{
+    background-color:#8D949E;
+}
 .icon-ava > img{
     width: 40px;
     height:40px;
     border-radius:50px;
-    opacity:0.8;
+    opacity:0.6;
 }
+
 .icon-ava > p{
     margin:10px;
-    font-size:20px;
+    font-size:18px;
     color: #2d86fa
    
 }
@@ -94,6 +104,7 @@ timkiem::-webkit-input-placeholder {
     justify-content: space-around;
     align-items: center;
     color: #a3a5aa;
+    font-size:18px;
 }
 .content{
     width:100%;
@@ -115,6 +126,9 @@ timkiem::-webkit-input-placeholder {
     border-radius: 7px;
 
 }
+.content-box:hover{
+    outline:none;
+}
 .ava{
     width:200px;
     height:200px;
@@ -133,7 +147,9 @@ timkiem::-webkit-input-placeholder {
     border: 2px solid gray ;
     
 }
-
+.ava img:hover{
+    border : 2px solid #fff;
+}
 
 .cam{
     width: 35px;
@@ -154,6 +170,9 @@ timkiem::-webkit-input-placeholder {
     opacity:1;
     z-index: 3;
 }
+.cam:hover{
+    background-color:#8D949E; 
+}
 .cover-img{
     width:150px;
     height:35px;
@@ -172,6 +191,10 @@ timkiem::-webkit-input-placeholder {
     z-index: 0;
     position:relative;
     top:-20px;
+    right:-50px;
+}
+.cover-img:hover{
+    background-color: gray;
 }
 .cover > i p {
     opacity: 1;
@@ -245,24 +268,51 @@ timkiem::-webkit-input-placeholder {
   
     
 }
+.box1 >p:hover{
+    color:blue;
+    border-bottom: 2px solid blue;
+}
 .friend{
     display:flex;
    text-align:justify;
    position:relative;
     left:-20px;
+    border-radius: 5px;
+    
+}
+.friend:hover{
+    background-color: #3a3b3c;
+    opacity: 0.8;
 }
 .friend > p{
     padding:5px;
 }
+.friend >p:hover{
+    color:blue;
+    border-bottom: 2px solid blue;
+}
+
 .more{
     display:flex;
     text-align:justify;
     align-items: center;
     position:relative;
     left:-20px;
+    border-radius: 5px;
+}
+.more:hover{
+    background-color: #3a3b3c;
 }
 .more > i{
     padding:5px;
+}
+.more >i:hover{
+    color:blue;
+    border-bottom: 2px solid blue;
+}
+.more>p:hover{
+    color:blue;
+    border-bottom: 2px solid blue;
 }
 
 .box2{
@@ -274,6 +324,7 @@ timkiem::-webkit-input-placeholder {
     align-items: center;
    
 }
+
 .add{
     width:120px;
     height:40px;
@@ -289,6 +340,9 @@ timkiem::-webkit-input-placeholder {
 .add > p{
     padding:5px;
 }
+.add:hover{
+    opacity:0.6;
+}
 .correct{
     width:210px;
     height:40px;
@@ -301,6 +355,9 @@ timkiem::-webkit-input-placeholder {
     font-size:17px;
     position:relative;
     left:-5px;
+}
+.correct:hover{
+    opacity: 0.6;
 }
 .correct > i {
     padding:5px;
@@ -318,4 +375,45 @@ timkiem::-webkit-input-placeholder {
     align-items: center;
     color:#fff;
     font-size:17px;
+}
+.setting:hover{
+    opacity: 0.6;
+}
+.mess{
+    width:60px;
+    height:250px;
+    
+    position:fixed;
+    right:10px;
+    bottom:70px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.mess img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.mess img:hover{
+    border: 2px solid #fff;
+}
+.icon-mess{
+    width:50px;
+    height:50px;
+    background-color: #fff;
+    opacity:0.6 ;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-mess:hover{
+    border: 2px solid #fff;
+}
+.mess i{
+    font-size:24px;
+    color:black;
 }
