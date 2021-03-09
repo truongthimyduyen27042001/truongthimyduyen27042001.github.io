@@ -1,0 +1,93 @@
+.container{
+    width:100%;
+    height:500px;
+    background-color:#170f23;
+}
+.content{
+    width:100%;
+    height:100px;
+    background-color: none;
+    color:#fff;
+    font-size: 20px;
+    box-sizing: none;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.content > p{
+    position: relative;
+    left:30px;   
+}
+.song{
+    width:100%;
+    height:300px;
+    background-color: none;
+    display:flex;
+    
+}
+.song1{
+    width:18%;
+    height:250px;
+    background-color: none;
+    position: relative;
+    left: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.bg{
+    width:100%;
+    height:100%;
+    object-fit: containt;
+    border-radius: 15px;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+    animation-delay: 0.5s;
+    
+}
+.shadow{
+    width:100%;
+    height:100%;
+    background-color: black;
+    position: relative;
+    top:-102%;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 1;
+    
+}
+.icon{
+    width:70%;
+    height:30%;
+    color:#fff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    z-index: 2;
+}
+#play{
+    font-size:40px;
+}
+.song1:hover .shadow{
+    opacity: 0.5;
+}
+.song1:hover .bg{
+    transform:scale(1.2);
+}
+.text{
+    width: 250px;
+    height:50px;
+    background-color: none;
+    position: relative;
+    left:20px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:#fff;
+    padding:10px 10px;
+}
