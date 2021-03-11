@@ -1,3 +1,4 @@
+
 .container{
     width:100%;
     height:600px;
@@ -47,12 +48,19 @@
     height:100%;
     background-color: none;
     font-family: 'Recursive', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color:#fff;
     display:flex;
     justify-content: space-around;
     align-items: center;
     
+}
+
+.pa:hover >hr{
+    opacity: 1;
+}
+.navbar .introl > p{
+    border:5px solid #fff;
 }
 .setting-color{
     width: 50px;
@@ -78,18 +86,20 @@
     display:flex;
     align-items: center;
     border-radius: 5px;
+    flex-wrap: wrap;
+    
 }
 .box .anh{
     width:40%;
-    height:100%;
+    height:80%;
     background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .anh img{
-    width:80%;
-    height:80%;
+    width:500px;
+    height:380px;
     object-fit: contain;
 }
 .info{
@@ -147,7 +157,7 @@
     height:17%;
     background-color: noe;
     font-family: 'Bebas Neue', cursive;
-    font-size:25px;
+    font-size:20px;
 }
 .thongtin2{
     width:70%;
@@ -155,7 +165,7 @@
     background-color: none;
     font-family: 'Lato', sans-serif;
     color:#c3c4c8;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     top:2px;
     background-color: none;
@@ -176,4 +186,42 @@ align-items: center;
 }
 #last .thongtin2 >i {
     padding-right:7px;
+}
+.box .footer-box{
+    width:100%;
+    height:50px;
+    background-color: #07cb79;
+    position: relative;
+    top:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-box .icon{
+    width: 50%;
+    height:100%;
+    background-color: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon .icon1{
+    width: 40px;
+    height:40px;
+    background-color: #07cb79;
+    display: flex;
+    color:#fff;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+}
+.icon1:hover{
+    background-color: #06b66c;
 }
