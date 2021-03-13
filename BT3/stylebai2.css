@@ -6,7 +6,7 @@ text-align: center;
 }
 
 .box{
-    width:40%;
+    width: 43%;
    margin:50px;
     /* dạng trình bày :  */
     display:flex;
@@ -14,6 +14,9 @@ text-align: center;
     /* định dạng content */
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+   
 }
 .btn{
     margin-top:20px;
@@ -23,7 +26,8 @@ text-align: center;
     border-bottom:1px solid black;
 }
 img{
-    
+    margin:0px;
+    padding: 0px;
     object-fit:contain;
 }
 .day{
@@ -34,7 +38,7 @@ img{
 .pic>img{
     width:500px;
     height:500px;
-    margin:50px;
+    object-fit: cover;
 
 
 }
