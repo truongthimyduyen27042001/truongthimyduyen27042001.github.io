@@ -67,9 +67,14 @@
                     <p>BLOG</p>
                     <p>CANLENDER</p>
                     <p>CONTACT</p>
-                    <i class="fas fa-sliders-h"></i>
-                            
+                    
                 </div>
+            
+                <div class="nav-small">
+                    <p class="menu">MENU</p>
+                    <i class="fas fa-sliders-h nav-icon" ></i>
+                </div>
+                
             </div>
             <div class="setting">
                 <i class="fas fa-cog"></i>
@@ -89,65 +94,44 @@
                         <div class="name-job">
                             <div class="name2">
                                 <p>I'm</p>
-                                <p id="robert">Robert Smith</p>
+                                <p class="robert">Robert Smith</p>
                             </div>
                             <div class="job">
                                 Developer and Buisinessman
                             </div>
                         </div>
+                        <hr color="#bdbec3" width="90%" tyle="solid" size="0.1px">
                     </div>
-                    <hr color="#bdbec3" width="493px" tyle="solid" size="0.1px">
+                    
                     <div class="info-after">
-                        <div class="infor1">
-                            <div class="infor1-a">
-                                <strong>AGE</strong>
-                            </div>
-                            <div class="infor1-b">
-                                29
-                            </div>
+                        <div class="info-after__info">
+                            <p class="info-afer name-info">AGE</p>
+                            <p class="info-spe">29</p>
                         </div>
-                        <div class="infor1">
-                            <div class="infor1-a">
-                                <strong>ADDRESS</strong>
-                            </div>
-                            <div class="infor1-b">
-                                24058, Belgium, Brussels, Liutte 27,BE 
-                            </div>
+                        <div class="info-after__info">
+                            <p class="info-afer name-info">ADDRESS</p>
+                            <p class="info-spe">24058, Belgium, Brussels, Liutte 27, BE</p>
                         </div>
-                        <div class="infor1">
-                            <div class="infor1-a">
-                                <strong>E-MAIL</strong>
-                            </div>
-                            <div class="infor1-b">
-                                robertsmith@company.com
-                            </div>
+                        <div class="info-after__info">
+                            <p class="info-afer name-info">E-MAIL</p>
+                            <a href="" style="text-decoration: none; "  class="info-spe infor-after___infor-spce">
+                                robertsmith@company.com</a>
                         </div>
-                        <div class="infor1">
-                            <div class="infor1-a">
-                                <strong>PHONE</strong>
-                            </div>
-                            <div class="infor1-b">
-                                +1 256 254 84 56
-                            </div>
+                        <div class="info-after__info">
+                            <p class="info-afer name-info">PHONE</p>
+                            <a href="" style="text-decoration: none;" class="info-spe infor-after___infor-spce">   +1 256 254 84 56</a>
                         </div>
-                        <div class="infor1">
-                            <div class="infor1-a">
-                                <strong>FREELANCE</strong>
-                            </div>
-                            <div class="infor1-b">
-                                till April 15,2016
-                            </div>
+                        <div class="info-after__info">
+                            <p class="info-afer name-info">FREELANCE</p>
+                            <p class="info-spe">till April 15, 2016</p>
                         </div>
-                        <div class="infor1">
-                            <div  class="infor1-a">
-                                <div class="on-vacation">
-                                    <strong>On Vacation</strong>
-                                </div>
-                            </div>
-                            <div class="infor1-b">
+                        <div class="info-after__info onvacation">
+                            
+                                <p class="info-after__info vacation">On Vacation</p>
+
+                            
                                 <i class="far fa-calendar-alt"></i>
-                                till March 25, 2016
-                            </div>
+                                <p class="info-spe">till March 25,2016</p>
                         </div>
                     </div>
                    
@@ -348,7 +332,7 @@
                             </div>
                         </div>
                         <div class="experience-center">
-                            <div></div>
+                            <div ></div>
                         </div>
                         <div class="experience-left" id="right">
                             <div class="ex">
@@ -550,6 +534,8 @@
                             <p>Discussions in tasks</p>
                             <p id="new">File sharing</p>
                             <p id="box10-line">Real-time Activity Stream</p>
+                            <p id="box10-line">Spreadsheet View</p>
+
                             <p id="box10-line">iphone and Android apps</p>
                             <p id="box10-line">Advanced email integration</p>
                             <p id="box10-line">Basic integrations</p>
@@ -796,6 +782,71 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+            <div class="part15">
+                <h1>Contact Me</h1>
+                <div class="box-15">
+                    <div class="box-15-left">
+                        <h2>Feel free to contact me</h2>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" required>
+                            <label class="form-control-placeholder" for="name">
+                               NAME
+                            </label>
+                            <div class="border"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="name" class="form-control" required>
+                                <label class="form-control-placeholder" for="name">
+                                   EMAIL
+                                </label>
+                                <div class="border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" required>
+                                    <label class="form-control-placeholder" for="name">
+                                       SUBJECT
+                                    </label>
+                                    <div class="border"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="mess" class="form-control" required>
+                                        <label class="form-control-placeholder" for="name">
+                                        MESSAGE
+                                        </label>
+                                        <div class="border"></div>
+                                        </div>
+                                        <button class="send">SEND</button>
+                    </div>
+                    <div class="box-15-left" id="box15-right">
+                        <div class="box15-txtright">
+                             <p>ADDRESS<span>Belgium,Brussels,Liutte 27,BE</span></p>
+                             <p>PHONE<span>+1 256 254 84 56</span></p>
+                             <p>E-MAIL<span>robertsmith@company.com</span></p>
+
+                        </div>
+                        <div class="box15-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.89310755083!2d4.305350265910779!3d50.85495409094146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2zQnLDumMteGVuLCBC4buJ!5e0!3m2!1svi!2s!4v1616749913146!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="box15-before">
+                                <div class="map" id="map" name="map">
+                                    <p>Bản đồ</p>
+                                    <div class="map-tooltip" for="map">
+                                        <input tyle="checkbox"  checked="">
+                                        <p>Địa hình</p>
+                                    </div>
+                                </div>
+                                <div class="map" id="satellite">
+                                    <p>Vệ tinh</p>
+                                    <div class="map-tooltip" for="map">
+                                        <input type="checkbox" checked="checked" >
+                                        <p>Địa hình</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
