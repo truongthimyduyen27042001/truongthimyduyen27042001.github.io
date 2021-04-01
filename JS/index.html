@@ -6,24 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
     
 <div class="container">
-    <div class="form">
-     <label for="name">Fullname</label> <input type="text" id="name" name="name" size="20" />
-    
-    
-      </div>
-      <div class="form" id="form2">
-     <label for="age">Age</label> <input type="text" id="age" name="age" size="20" />
-    
-    
-      </div>
-      <button id="add"> ADD
+    <div class="register">
+        <div class="form">
+            <label class="label" for="name">Fullname:</label> 
+            <input type="text" id="name" name="name" size="20" placeholder="Name"/>
+            
+         </div>
+             <div class="form" id="form2">
+            <label class="label" for="age">Age:</label> <input type="text" id="age" name="age" size="20" placeholder="Age" />
+           
+           
+             </div>
+             <button onclick="myFunction()" id="add"> ADD
+    </div>
+    <div class="warning ">
+        <div class="form-correct">
+            <div class="title-correct">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="warning-font">Tên của bạn không được có chữ số</p>
+            </div>
+        </div>
+    </div> 
         
  </div>
- <script src="js.js"></script>
+ <script src="js.js">
+
+ </script>
 </body>
 </html>

@@ -1,29 +1,75 @@
+:root{
+  --title-font: 'Noto Sans', sans-serif;
+  --btn-color:#07cb79;
+}
 *{
   padding:0;
   margin:0;
+  font-family: var(--title-font);
 }
+
 .container{
-    width:30vw;
-    height:25vh;
+    width:100%;
+    height:100vh;
     background-color:pink;
     margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+   
     
+  }
+  .register{
+    width:20%;
+    background-color:#fff;
+    border-radius:5px;
+    padding:2% 2%;
+   
   }
   .form{
-    
+ 
     display:flex;
-   padding-top:20px;
+   padding:20px 20px;
   }
+  .label{
+    width:30%;
+    font-size:15px;
+
+  }
+  .form>input{
+    border:2px solid none;
+    padding: 2px 8px;
+    border:1px solid black;
+  }
+ #add{
+   padding:2px 20px;
+   border-radius: 10px;
+   border:none;
+   background-color:var(--btn-color);
+   font-weight:600;
+   margin:1% 40%;
+ }
+.warning{
+  position:absolute;
   
-  .form .age>input{
-    margin-left:50%;
-  }
-  .container>button{
-    width:70px;
-    height:30px;
-    margin-top:20px;
-    margin-left:80px;
+ top:5%;
+ display:none;
+ 
+
 }
-#form2>input{
- margin-left:7%;
+.form-correct{
+  background-color:#fff;
+  padding:10% 10%;
+  border-radius: 4px;
+ background-color:yellow;
+  
+}
+.title-correct{
+  display:flex;
+
+}
+.title-correct>i{
+  margin-right:7%;
+  margin-top:5%;
 }
