@@ -1,0 +1,52 @@
+<!-- Viết một chương trình JavaScript để thay thế mọi ký tự trong một chuỗi đã
+cho với ký tự theo sau nó trong bảng chữ cái. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="enterText">
+            <h1>Enter your text</h1>
+            <form class="form-input" action="#">
+                <input type="text" placeholder="Enter your message" name="text" id="text" required> 
+                <button class="registersubmit" type="submit" onclick="myFunction(event)" >Register</button>
+            </form>
+        </div>
+        <div class="enterText res">
+            <h1>Resolve</h1>
+            <div class="text">
+                <p id=text-resolve>Truong thi my duyen</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        //   console.log((String.fromCharCode("a".charCodeAt()+1)))
+        function myFunction(e){
+            e.preventDefault();
+            let re="";
+          let mess=document.getElementById("text")
+          for(i=0;i<mess.value.length;i++){
+            // console.log(mess.value[i])
+            //  mess.value[i]=(String.fromCharCode("a".charCodeAt()+1))
+            if(mess.value[i].charCodeAt()==32) {
+                re+=" ";
+                continue;
+            }
+            re+=(String.fromCharCode(mess.value[i].charCodeAt()+1))
+          }
+          document.getElementById("text-resolve").innerText=re
+        }
+        
+       
+        
+    </script>
+</body>
+</html>

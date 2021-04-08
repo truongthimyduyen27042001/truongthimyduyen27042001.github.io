@@ -1,0 +1,25 @@
+*{
+    padding : 0 ; 
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    background-color: #FF7F50;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+.style1{
+    margin: 4em 4em;
+    display:flex;
+    align-items: center;
+}
+.form-date{
+    background-color:#fff;
+   padding:1em 1em;
+   width:20%;
+   height:2em;
+    border-radius: 3px;
+    font-size:1em;
+    margin:1em 1em;
+}

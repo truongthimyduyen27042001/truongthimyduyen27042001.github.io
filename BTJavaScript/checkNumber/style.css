@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-color:#FAEBD7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.checkNum
+{
+    margin:4em 2em;
+    height: fit-content;
+    padding :2em 2em;
+    width:20%;
+   
+
+}
+.enter{
+    margin:1em 0em;
+    display: flex;
+    justify-content: space-around;
+}
+#enterNum{
+   width:70%;
+    margin:2em none;
+    padding:0.8em 0;
+}
+.checkNum button{
+    padding:0.5em 0.5em;
+    background-color: #FF7F50;
+    border: 2px solid #FF7F50;
+    opacity: 0.8;
+}
+.checkNum button:hover{
+    opacity: 1;
+}
+.error{
+    width:50%;
+    height:50px;
+    background-color: red;
+}
+.form-enter{
+    margin:2em 2em;
+    display: flex;
+    flex-direction: column;
+}
+.form-enter>h1{
+    margin:0.5em 0.5em;
+}
+.form-dangky{
+    height: fit-content;
+    background-color: #fff;
+    width:fit-content;
+    margin:2em 2em;
+    padding:1em 1em;
+    border-radius: 3px;
+}
+.form-dangky>h1{
+    margin-bottom:0.5em;
+}
+.form-dangky>p{
+    margin-bottom: 0.7em;
+}
+.form-dangky>hr{
+
+    height:0.1px;
+    margin-bottom: 1em;
+}
+.form-input{
+    display:flex;
+    flex-direction: column;
+}
+.form-input > label{
+    font-size:1.5em;
+    margin-bottom:0.2em;
+}
+.form-input > input {
+    margin-bottom:1em;
+    padding:0.8em ;
+}
+input[type=text]:focus,input[type=number]:focus{
+    background-color:#ddd;
+    outline:none;
+}
+.registersubmit{
+    padding:0.8em 0.8em;
+    margin:1em 12em;
+    background-color: #07cb79;
+    border:2px solid  #07cb79;
+    color:#fff;
+    opacity:0.9;
+   
+}
+.registersubmit:hover{
+    opacity:1;
+}
+.thongbao{
+    width:15em;
+    padding:1em 1em;
+}
+.thongbao>h2{
+    margin-bottom:0.5em;
+}

@@ -1,0 +1,50 @@
+<!--  Viết chương trình để in ra ngày tháng năm theo các định dạng mm-dd-
+yyyy, mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BT2</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+     <div class="container">
+        <div class="style1">
+            <h1>DateTime</h1>
+            <div class="form-date" id="date">
+                
+            </div>
+            <div  class="form-date time" >
+                
+            </div>
+        </div>
+        <div class="style1 style2">
+            <h1>DateTime</h1>
+            <div class="form-date" id="date2">
+                
+            </div>
+            <div  class="form-date time" >
+                
+            </div>
+        </div>
+     </div>
+     <script>
+         var today=new Date();
+         //day-month-year
+         var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+         document.getElementById("date2").innerText+=date;
+         //month-day-year
+         var date1 = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+         document.getElementById("date").innerText+=date1;
+         var time = today.getHours() + " : " + today.getMinutes() + " : " + today.getSeconds();
+         let timevalue=document.getElementsByClassName("time")
+         timevalue[0].innerText+=time;
+         timevalue[1].innerText+=time;
+     </script>
+ </body>
+ </html>
