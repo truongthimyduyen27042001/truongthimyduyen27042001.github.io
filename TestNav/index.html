@@ -18,6 +18,119 @@
 </head>
 <body>
     <div class="container">
+        <div id="setting-color">
+            <div id="choose-color">
+                <div class="choose-item">
+                    <p id="light">LIGHT</p>
+                    <p id="dark">DARK</p>
+                </div>
+                <div class="control-color">
+                    <hr class="line-color">
+                    <div class="control"></div>
+                </div>
+                <div class="color">
+                    <div class="color-item item1">
+
+                    </div>
+                    <div class="color-item item2">
+                        
+                    </div>
+                    <div class="color-item item3">
+
+                    </div>
+                    <div class="color-item item4">
+                        
+                    </div>
+                    
+                    <div class="color-item item5">
+
+                    </div>
+                    <div class="color-item item6">
+                        
+                    </div>
+                    
+                    <div class="color-item item7">
+
+                    </div>
+                    <div class="color-item item8">
+                        
+                    </div>
+                    
+                    <div class="color-item item9">
+
+                    </div>
+                    <div class="color-item item10">
+                        
+                    </div>
+                    
+                    <div class="color-item item11">
+
+                    </div>
+                    <div class="color-item item12">
+                        
+                    </div>
+                    
+                    <div class="color-item item13">
+
+                    </div>
+                    <div class="color-item item14">
+                        
+                    </div>
+                    
+                    <div class="color-item item15">
+
+                    </div>
+                    <div class="color-item item16">
+                        
+                    </div>
+                    
+                </div>
+                <hr class="line-color line2">
+                <div class="color">
+                    <div class="color-item item17">
+
+                    </div>
+                    <div class="color-item item18">
+                        
+                    </div>
+                    <div class="color-item item19">
+
+                    </div>
+                    <div class="color-item item20">
+                        
+                    </div>
+                    <div class="color-item item21">
+
+                    </div>
+                    <div class="color-item item22">
+                        
+                    </div>
+                    <div class="color-item item23">
+
+                    </div>
+                    <div class="color-item item24">
+                        
+                    </div>
+                    
+                </div>
+                <div class="choose-show-bg">
+                   <div class="checkChoose">
+
+                   </div>
+                   <h6>SHOWHEADER BACKGROUND IMAGE</h6>
+                    
+                </div>
+               
+               
+            </div>
+
+            <button id="btn-setting-color" onclick="setColorFunction(event)">
+                    
+                <i class="fas fa-cog"></i>
+            </button>
+
+        </div>
+       
         <div class="header" style="min-height:126px">
                 <div class="header-bg" >
                     
@@ -95,7 +208,7 @@
             </div>
             <div class="content-profile">
                 <div class="profile-inner">
-                    <div class="profile-box">
+                    <div id="profile-box">
                       <div class="profile-info">
                         <div class="profile-img">
                             <div class="anh">
@@ -168,13 +281,13 @@
                         </div>  
                       </div>
                     </div>
-                    <div class="profile-content">
+                    <div id="profile-content">
                         <button class="download">DOWNLOAD RESUME</button>
                         <div class="profile-content-text">
                             <h3>Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</h3>
                         </div>
                     </div>
-                    <div class="professional">
+                    <div id="professional">
                         <div class="content profess">Professtional Skills</div>
                         <div class="profess-box">
                             <div class="profess-bar">
@@ -231,7 +344,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="porfolio">
+                    <div id="porfolio">
                         <div class="content por">Portfolio</div>
                         <div class="port-product">
                             <div class="port-value">
@@ -421,7 +534,7 @@
                            </button>
                         </div>
                         <!-- Phan work experience thu nghiem -->
-                     <div class="work-experience">
+                     <div id="work-experience">
                          <div class="content work">Work Experience</div>
                          <!-- Work -->
                          
@@ -484,7 +597,7 @@
                          </div>
                     </div>
                     <!-- School kinh nghiem -->
-                    <div class="school-experience">
+                    <div id="school-experience">
                         <div class="content school">Education</div>
                         <div class="edu-experience">
                             <hr class="timeline"></hr>
@@ -541,7 +654,7 @@
                     </div>
                     <!-- ket thuc phan icon - software -->
                     <!-- phan recomment -->
-                    <div class="reference">
+                    <div id="reference">
                         <div class="content refer">
                             References
                         </div>
@@ -568,7 +681,7 @@
                     </div>
                     <!-- ket thuc phan recomment -->
                     <!-- bat dau pricing -->
-                    <div class="pricing">
+                    <div id="pricing">
                         <div class="content pri">
                             Pricing
                         </div>
@@ -641,7 +754,7 @@
                     </div>
                     <!-- ket thuc pricing -->
                     <!-- from the blog  -->
-                    <div class="from-the-blog">
+                    <div id="from-the-blog">
                         <div class="content blog">From The Blog</div>
                         <div class="blog-inner">
                             <div class="blog-small">
@@ -694,7 +807,7 @@
                     </div>
                     <!-- ket thuc the blog -->
                    
-                    <div class="text-section">
+                    <div id="text-section">
                         <div class="content section">
                             Text Section
                         </div>
@@ -704,7 +817,7 @@
                     </div>
                      <!-- text - sestion -->
                      <!-- my interest -->
-                     <div class="my-interrest">
+                     <div id="my-interrest">
                          <div class="content interest">
                              My Interest
                          </div>
@@ -762,7 +875,7 @@
                     </div>
                     <!-- ket thuc my interest -->
                       <!-- availabititi canlader -->
-                    <div class="availability-calendar">
+                    <div id="availability-calendar">
                         <div class="content calendar">Availability Calendar</div>
                         <div class="box-14">
                             <div class="box-14-left">
@@ -930,5 +1043,6 @@
             header.classList.toggle("sticky",window.scrollY>0)
         })
     </script>
+    <script src="scrip.js"></script>
 </body>
 </html>
