@@ -277,21 +277,23 @@
 .header-bar{
     position:fixed;
     width:100%;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding: 0em 0em;
     margin:0;
     background-color:#fff;
     z-index:15;
+   
 }
 .header-bar.sticky{
-    padding:5px 100px;
-    background-color:#fff;
+    /* padding:5px 100px; */
+    /* background-color:#fff; */
+  
 }
 .header-bar-inner{
     width:100%;
     max-width:1550px;
     margin:0 auto;
     padding:10px 15px;
+   
 }
 .row{
     width:100%;
@@ -319,41 +321,47 @@
     display:flex;
     width:fit-content;
 }
-.header-menu .nav{
+.header-menu ul{
     display:flex;
     list-style: none;
     margin:auto;
     width:fit-content;
     
 }
-.nav>li{
+.header-menu ul>li{
     margin:0 10px;
 
 
 }
-.nav>li:hover .nav-hightline{
-    display:block;
-}
+/* .nav>li:hover .nav-hightline{
+    display:none;
+} */
 .header-menu ul li>a{
     text-decoration:none;
     color:var(--content-color);
     position:relative;
 }
-.nav-hightline{
+
+ .active{
     position:absolute;
     top:100%;
     left:0;
     width:100%;
-    height:3px;
+    height:2px;
     background-color:var(--main-color);
     border-radius: 5px;
-    display:none;
-}
+    display:block;
+} 
+/* moi lan hover menuItem thi no se hien active */
 
 .nav-setting > i {
     border:1px solid var(--border-color);
    padding:0.8em 0.8em;
  
+} 
+.active{
+    border-bottom:5px solid var(--main-color);
+    border-radius:4px;
 }
 /* Content profile */
 .content-profile{
@@ -367,6 +375,8 @@
    padding:2% 2%;
     box-sizing: border-box;
     z-index:5;
+    display:flex;
+    flex-direction: column;
   
 }
 
@@ -554,8 +564,9 @@
 .profile-content-text{
     display: flex;
     text-align: center;
-    margin-top:5%;
+    margin:1em 0;
     width:85%;
+   
 }
 .profile-content-text>h3{
     color:var(--text-color);
@@ -567,16 +578,15 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin-top:5%;
-   
+  
 }
 .content{
    width:fit-content;
     font-size:2.5em;
     font-family: var(--title-font);
     box-sizing: border-box;
-    margin:auto;
-    margin:1em auto 0.5em auto;
+    
+    margin:2em auto 0.5em auto;
     font-weight: 600;
     color:var(--content-color);
    
@@ -1514,6 +1524,7 @@ align-items: center;
     /* calendar */
     #availability-calendar{
         width:100%;
+        margin-top:5em;
     }
     .box-14{
         width:900px;
