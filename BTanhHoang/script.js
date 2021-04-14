@@ -20,6 +20,8 @@ var table=document.getElementById('table')
 var nameForm=document.querySelector("#nameitemForm")
 var majorForm=document.getElementById("majorForm")
 let imgForm=document.getElementById("formIMG")
+let errorMajor=document.getElementById("messageMajor")
+let errorName=document.getElementById("message")
 
 console.log("@@@")
 function preview_img(event){
@@ -34,15 +36,20 @@ document.querySelector("#input-image").onchange=preview_img;
 function addSV(event){
     event.preventDefault();
     if(checkValidValue()==false) {
-        alert("Chưa nhập đầy đủ thông tin")
+        
         return 
     }
     else {
-        
+        errorName.innerHTML=" "
+        errorMajor.innerHTML=" "
+
         var AddRown = table;
         var NewRow = AddRown.insertRow(stt);
 
-        
+        var realMajor;
+        if(majorForm.value=="Công nghệ thông tin") realMajor=selectedTT
+        if(majorForm.value=="Công nghệ thực phẩm ") realMajor=selectedTP
+        if(majorForm.value=="Hóa học") realMajor=selectedHH
         
         var name = nameForm.value
         var major = majorForm.value;
@@ -61,7 +68,7 @@ function addSV(event){
         cel1.innerHTML =`<input class="nameitems"  type="text" name="fname" value="${read}" 
         readonly
         required>`
-        cel2.innerHTML =selectedTP
+        cel2.innerHTML =realMajor
         cel3.innerHTML = ` <img src="${anh}" alt=""> `;
         cel4.innerHTML=`  <input class="btn btn-primary" type="submit" id="edit" value="Edit">
         <button type="button" class="btn btn-danger">Delete</button>`
@@ -73,13 +80,15 @@ document.querySelector("#form").onsubmit=addSV;
 let error;
 function checkValidValue(){
     let name=document.querySelector("#nameitemForm").value
-    if(name==null) {
-        error="Chưa nhập tên"
+    if(name==null||name[0]>='0'&&name[0]<'9'||name.length<10) {
+        error="Name is valid"
+        errorName.innerHTML=error;
         return false;
     }
     let select=document.getElementById("majorForm").value;
     if(select=="Chọn chuyên ngành") {
         error="Chưa chọn chuyên ngành"
+        errorMajor.innerHTML=error;
         return false;
     }
     
