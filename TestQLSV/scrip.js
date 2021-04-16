@@ -36,12 +36,10 @@ function addSV(event){
         })
       
         localStorage.setItem("data",JSON.stringify(listdata))
-                    
+        this.readData();          
     }
 }
 document.querySelector("#form").onsubmit=addSV;
- 
-
 function checkValidValue(){
     
     if(nameForm.value==null||nameForm.value[0]>='0'&&nameForm.value[0]<'9'||nameForm.value.length<10) {
