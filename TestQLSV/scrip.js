@@ -34,12 +34,13 @@ function addSV(event){
             major : majorForm.value,
             anh : imgForm.src
         })
-
+      
         localStorage.setItem("data",JSON.stringify(listdata))
-        this.readData();             
+                    
     }
 }
 document.querySelector("#form").onsubmit=addSV;
+ 
 
 function checkValidValue(){
     
@@ -66,7 +67,7 @@ function readData(){
     let listdata=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):[]
 
     if(listdata.length==0) return 
-
+    
     let tableContent = `<thead>
         <tr>
             <td id="stt">#</td>
@@ -92,10 +93,10 @@ function readData(){
                     
                     <!-- cai category chinh la mot lua chon cua combobox -->
                     <td>
-                        <select class="selectList" disabled name="" id="major${StudentID}">
-                            <option value="">Công nghệ thông tin</option> 
-                            <option value="">Công nghệ thực phẩm</option>
-                            <option value="">Hóa học</option>
+                        <select class="selectList" disabled ">
+                            <option value="Công nghệ thông tin">Công nghệ thông tin</option> 
+                            <option value="Công nghệ thực phẩm">Công nghệ thực phẩm</option>
+                            <option value="Hóa học">Hóa học</option>
                         </select>
                     </td>
                     <td>
@@ -108,8 +109,12 @@ function readData(){
                 </tr>
         `
     })
+   
     tableContent+='</tbody>'
     document.getElementById("table").innerHTML=tableContent;
+    listdata.forEach((student,index)=>{
+        document.getElementsByClassName("selectList")[index].value=student.major
+      })
 }
 function deleteRow(id){
     let listdata=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):[]
