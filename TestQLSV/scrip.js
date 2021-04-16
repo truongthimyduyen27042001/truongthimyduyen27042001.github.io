@@ -18,10 +18,8 @@ document.querySelector("#input-image").onchange=preview_img;
 
 
 function addSV(event){
-    event.preventDefault();
-    
+    event.preventDefault();   
     if(checkValidValue()==false) {   
-        alert("Valid")
         return 
     }
     else {
@@ -93,7 +91,7 @@ function readData(){
                     
                     <!-- cai category chinh la mot lua chon cua combobox -->
                     <td>
-                        <select disabled="disabled" name="" id="major">
+                        <select class="selectList" disabled name="" id="major${StudentID}">
                             <option value="">Công nghệ thông tin</option> 
                             <option value="">Công nghệ thực phẩm</option>
                             <option value="">Hóa học</option>
@@ -103,7 +101,7 @@ function readData(){
                         <img src="${student.anh}" alt="hinhanh">
                     </td>
                     <td>
-                        <button type="submit" class="btn btn-primary" onclick="editRow(event)" >EditTest</button>
+                        <button type="submit" class="btn btn-primary" id="btnEdit"  onclick="editRow(event,${StudentID})" >Edit</button>
                         <button type="button" class="btn btn-danger" onclick="deleteRow(${StudentID})">Delete</button>
 
 
@@ -119,4 +117,20 @@ function deleteRow(id){
     listdata.splice(id,1)
     localStorage.setItem("data",JSON.stringify(listdata))
     readData()
+}
+function editRow(event,id){   
+    var btnEdit=document.getElementById("btnEdit") 
+    if(btnEdit.innerHTML=="Edit") {
+        btnEdit.innerHTML="Save"
+        event.target.parentNode.parentNode.querySelector("input").readOnly=false;
+        document.getElementsByClassName("selectList")[id].disabled = false;
+    }
+    else{  
+       btnEdit.innerHTML="Edit"
+        event.target.parentNode.parentNode.querySelector("input").readOnly=true;
+        document.getElementsByClassName("selectList")[id].disabled = true;
+    }
+
+    
+
 }
