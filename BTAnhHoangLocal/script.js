@@ -15,9 +15,13 @@ function preview_img(event){
 }
 document.querySelector("#input-image").onchange=preview_img;
 
+//hoat dong show
 //hoat dong danh cho submit 
+
 var retrievedObject = localStorage.getItem("data");
-var stored  = JSON.parse(retrievedObject);
+var stored = JSON.parse(localStorage.getItem("data"));
+showData()
+//hoat dong danh cho submit 
 
 function addSV(event){
     event.preventDefault();
@@ -29,11 +33,7 @@ function addSV(event){
       
         errorName.innerHTML=" "
         errorMajor.innerHTML=" "
-        
-
-
-        alert(stored.length)
-
+  
         var temp = {
                 "stt" :stt,
                 "name" :nameForm.value,
@@ -43,8 +43,9 @@ function addSV(event){
         stt++
 
         stored.push(temp)
+        
         localStorage.setItem("data",JSON.stringify(stored))
-  
+
         showData()
                     
     }
@@ -78,7 +79,7 @@ function checkValidValue(){
 
 var listdata=[]
 var newSTudent={
-    "stt" :"1",
+    "stt" :1,
     "name" :"Trương Thị Mỹ Duyên",
     "major" : "Công nghệ thông tin",
     "src" : "https://scontent.fdad8-1.fna.fbcdn.net/v/t1.6435-9/82440376_1333037346905603_3222950360930844672_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=174925&_nc_ohc=dTFYgGi3ekcAX9_D8Hq&_nc_ht=scontent.fdad8-1.fna&oh=94979b660ba50170151332133e959a7d&oe=609C12E3"
@@ -86,8 +87,8 @@ var newSTudent={
  listdata.push(newSTudent)
 
  var newSTudent2={
-    "stt" :"2",
-    "name" :"Trần Thị Phượng",
+    "stt" :2 ,
+    "name" :"Lê Hoàng Ngọc Hân",
     "major" : "Công nghệ thông tin",
     "src" : "https://scontent.fdad3-1.fna.fbcdn.net/v/t1.6435-9/150082242_1430472140650096_2994224548256427455_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=ijzlDP0lmtYAX8iK-xF&_nc_ht=scontent.fdad3-1.fna&oh=181ebe62574d2af57767852080048b12&oe=609E143B"
  }

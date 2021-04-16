@@ -1,0 +1,87 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;    
+}
+.container {
+
+    width:100vw;
+    height:100vh;
+    font-weight: 700;
+    text-align: center;
+    padding:3em 1em;
+}
+#form{
+
+ display: flex;
+ border:2px solid black;
+ border-radius: 5px;
+
+}
+.choseFile{
+    display: flex;
+    flex-direction: column;
+}
+#formIMG{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    margin-top:1em;
+    border:1px solid black;
+}
+#submit{
+    transform: translateY(2em);
+}
+/* form table */
+#table{
+    border-spacing: 4em;
+}
+thead tr{
+    border-bottom: 1px solid #ccc;
+    padding:0 5em;
+}
+thead {
+    margin-right:2em;
+    border: 1px solid black;
+    padding:0 10em;
+  
+}
+thead tr td{
+    padding:0 4em;
+}
+
+#stt{  
+  padding:0 5em;
+  
+}
+#category{
+    padding:0 10em;
+  
+}
+#image{
+    padding:0 4em;
+  
+}
+#action{
+    padding:0 8em;
+}
+#row1{
+    margin: 2em 14em;
+    padding:2em 2em;
+}
+td{
+    border-bottom: 1px solid #ccc;
+   padding:1em 0em;
+}
+.seclectTable{
+    background-color:red;
+    
+}
+img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.error{
+    color:red;
+}
