@@ -18,7 +18,8 @@ document.querySelector("#input-image").onchange=preview_img;
 
 
 function addSV(event){
-    event.preventDefault();   
+    event.preventDefault();
+   
     if(checkValidValue()==false) {   
         return 
     }
@@ -101,10 +102,8 @@ function readData(){
                         <img src="${student.anh}" alt="hinhanh">
                     </td>
                     <td>
-                        <button type="submit" class="btn btn-primary" id="btnEdit"  onclick="editRow(event,${StudentID})" >Edit</button>
+                        <button type="submit" class="btn btn-primary btnEdit"  onclick="editRow(event,${StudentID})" >Edit</button>
                         <button type="button" class="btn btn-danger" onclick="deleteRow(${StudentID})">Delete</button>
-
-
                     </td>
                 </tr>
         `
@@ -119,7 +118,7 @@ function deleteRow(id){
     readData()
 }
 function editRow(event,id){   
-    var btnEdit=document.getElementById("btnEdit") 
+    var btnEdit=document.getElementsByClassName("btnEdit")[id]
     if(btnEdit.innerHTML=="Edit") {
         btnEdit.innerHTML="Save"
         event.target.parentNode.parentNode.querySelector("input").readOnly=false;
@@ -130,7 +129,4 @@ function editRow(event,id){
         event.target.parentNode.parentNode.querySelector("input").readOnly=true;
         document.getElementsByClassName("selectList")[id].disabled = true;
     }
-
-    
-
 }
