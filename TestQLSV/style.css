@@ -85,3 +85,7 @@ img{
 .error{
     color:red;
 }
+.anhItem{
+    display: flex;
+    flex-direction: column;
+}

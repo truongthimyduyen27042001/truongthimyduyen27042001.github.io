@@ -18,7 +18,7 @@
           <div class="col " id="itemName">
               <h4>Item name</h4>
               <input class="nameitems" id="nameitemForm" type="text" name="fname" required>
-              <p  class="error" id="message"></p>
+              <p class="error" id="message"></p>
           </div>
           <div class="col category">
               <h4>Chuyên ngành</h4>
@@ -31,8 +31,9 @@
             <p class="error" id="messageMajor"></p>
           </div>
           <div class="col choseFile">
-            <input type="file" accept="image/*" id="input-image">
+            <input type="file" accept="image/*" id="input-image" required>
             <img src="" alt="" id="formIMG">
+            <p class="error" id="messageIMG"></p>
           </div>
           <div class="col submit">
             <button type="submit" class="btn btn-primary" id="submitForm" onclick="addSV(event)">Submit Form</button>
@@ -50,7 +51,6 @@
                     <td id="action">Action</td>
                 </tr>
             </thead>
-
             <tbody>              
             </tbody>
         </table>    
