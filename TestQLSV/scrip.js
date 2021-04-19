@@ -144,8 +144,8 @@ function readData(){
                     </td>
                     <td>
                        <div class="anhItem">
-                            <input type="file" accept="image/*"  id="inputAnh${StudentID}" style="display:none" required>
-                            <img src="${student.anh}" alt="" id="anh${StudentID}">
+                            <input type="file" id="inputAnh${StudentID}"  style="display:none" accept="image/*" required>
+                            <img src="${student.anh}" alt="" id="anhIMG${StudentID}" alt="hinhanh">
                        </div>
                        <p class="error" id="eAnh${StudentID}"></p>
                     </td>
@@ -180,9 +180,10 @@ function editRow(event,id){
     else{  
    
     nameNew = document.getElementById(`name${id}`)
+    console.log(nameNew.value)
     majorNew=document.getElementById(`select${id}`)
-    srcNew=document.getElementById(`anh${id}`)
-    console.log(majorNew.value)
+    srcNew=document.getElementById(`anhIMG${id}`)
+    console.log(srcNew.src)
 
     let eName=document.getElementById(`eName${id}`)
     let eAnh=document.getElementById(`eAnh${id}`)
