@@ -35,9 +35,10 @@ function addSV(event){
         return 
     }
     else {
+       
         errorName.innerHTML=" "
         errorMajor.innerHTML=" "
-        imgForm.src="http://127.0.0.1:5500/index.html"
+        errorIMG.innerHTML=" "
 
         let listdata=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):[]
         listdata.push({
@@ -51,19 +52,18 @@ function addSV(event){
         this.readData(); 
         nameForm.value= " "
         majorForm.value="Chọn chuyên ngành"
-        imgForm.src="http://127.0.0.1:5500/index.html"         
+        formIMG.src="http://127.0.0.1:5500/index.html?fname=duyen"         
     }
 }
 document.querySelector("#form").onsubmit=addSV;
 function checkValidName(nameCheck,eName){
     let checkName=true;
-    nameCheck.value=nameForm.value.trim()
+    eName.innerHTML="";
     if(nameCheck.value==""){
         eName.innerHTML="Bạn chưa nhập tên!";
         checkName=false;
     }
-    if(nameCheck.value[0]>='0'&&nameCheck.value[0]<='9'){
-       
+    if(nameCheck.value[0]>='0'&&nameCheck.value[0]<='9'){ 
         eName.innerHTML="Tên không bắt đầu bằng chữ số"
         checkName=false;
     }
@@ -71,12 +71,13 @@ function checkValidName(nameCheck,eName){
         eName.innerHTML="Tên không được quá 10 kí tự"
         checkName=false;
     }
-  
+    
     return checkName;
 
 }
 function checkValidMajor(){
     let checkMajor=true
+    errorMajor.innerHTML=""
     if(majorForm.value=="Chọn chuyên ngành"){
         errorMajor.innerHTML="Bạn chưa chọn chuyên nghành"
         checkMajor=false;
@@ -85,6 +86,7 @@ function checkValidMajor(){
 }
 function checkValidAnh(imgCheck,errorIMGCheck){
     let checkAnh=true;
+    errorIMGCheck.innerHTML="";
     if(imgCheck.src=="http://127.0.0.1:5500/index.html?fname=duyen"){
         checkAnh=false;
         errorIMGCheck.innerHTML="Bạn chưa chọn ảnh";
@@ -94,6 +96,7 @@ function checkValidAnh(imgCheck,errorIMGCheck){
 }
 
 function checkValidValue(){ 
+    nameForm.value=nameForm.value.trim()
    let checkName=checkValidName(nameForm,errorName)
     let checkMajor=checkValidMajor();
     let checkAnh=checkValidAnh(imgForm,errorIMG)
@@ -144,7 +147,7 @@ function readData(){
                             <input type="file" accept="image/*"  id="inputAnh${StudentID}" style="display:none" required>
                             <img src="${student.anh}" alt="" id="anh${StudentID}">
                        </div>
-                       <p class="error" id="eAnh${StudentID}"> </p>
+                       <p class="error" id="eAnh${StudentID}"></p>
                     </td>
                     <td>
                         <button type="submit" class="btn btn-primary btnEdit"  onclick="editRow(event,${StudentID})" >Edit</button>
@@ -179,29 +182,29 @@ function editRow(event,id){
     nameNew = document.getElementById(`name${id}`)
     majorNew=document.getElementById(`select${id}`)
     srcNew=document.getElementById(`anh${id}`)
-    
-  
-    checkName=true;
+    console.log(majorNew.value)
 
     let eName=document.getElementById(`eName${id}`)
     let eAnh=document.getElementById(`eAnh${id}`)
-        checkValidName(nameNew,eName);
-      if(checkName==false) return ;
-      else eName.innerHTML="";
-      
     
-
-    let listdata=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):[]
-        listdata[id]={
-            name : nameNew.value,
-            major : majorNew.value,
-            anh:srcNew.src
+    let checkName=checkValidName(nameNew,eName);
+    let checkAnh=checkValidAnh(srcNew,eAnh);
+   if(checkName==false&&checkAnh==false) return;
+   if(checkName&&checkAnh) {
+       eName.innerHTML="";
+       srcNew.innerHTML="";
+            let listdata=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):[]
+            listdata[id]={
+                name : nameNew.value,
+                major : majorNew.value,
+                anh:srcNew.src
+            }
+            localStorage.setItem("data",JSON.stringify(listdata))
+            btnEdit.innerHTML="Edit"
+            document.getElementById(`inputAnh${id}`).style.display="none"
+        
+            event.target.parentNode.parentNode.querySelector("input").readOnly=true;
+            document.getElementsByClassName("selectList")[id].disabled = true;
         }
-        localStorage.setItem("data",JSON.stringify(listdata))
-       btnEdit.innerHTML="Edit"
-       document.getElementById(`inputAnh${id}`).style.display="none"
-      
-        event.target.parentNode.parentNode.querySelector("input").readOnly=true;
-        document.getElementsByClassName("selectList")[id].disabled = true;
     }
 }
