@@ -17,120 +17,286 @@
 
 </head>
 <body>
-    <div class="container">
-        <div id="setting-color">
-            <div id="choose-color">
-                <div class="choose-item">
-                    <p id="light">LIGHT</p>
-                    <p id="dark">DARK</p>
-                </div>
-                <div class="control-color">
-                    <hr class="line-color">
-                    <div class="control"></div>
-                </div>
-                <div class="color">
-                    <div class="color-item item1">
-
-                    </div>
-                    <div class="color-item item2">
-                        
-                    </div>
-                    <div class="color-item item3">
-
-                    </div>
-                    <div class="color-item item4">
-                        
-                    </div>
-                    
-                    <div class="color-item item5">
-
-                    </div>
-                    <div class="color-item item6">
-                        
-                    </div>
-                    
-                    <div class="color-item item7">
-
-                    </div>
-                    <div class="color-item item8">
-                        
-                    </div>
-                    
-                    <div class="color-item item9">
-
-                    </div>
-                    <div class="color-item item10">
-                        
-                    </div>
-                    
-                    <div class="color-item item11">
-
-                    </div>
-                    <div class="color-item item12">
-                        
-                    </div>
-                    
-                    <div class="color-item item13">
-
-                    </div>
-                    <div class="color-item item14">
-                        
-                    </div>
-                    
-                    <div class="color-item item15">
-
-                    </div>
-                    <div class="color-item item16">
-                        
-                    </div>
-                    
-                </div>
-                <hr class="line-color line2">
-                <div class="color">
-                    <div class="color-item item17">
-
-                    </div>
-                    <div class="color-item item18">
-                        
-                    </div>
-                    <div class="color-item item19">
-
-                    </div>
-                    <div class="color-item item20">
-                        
-                    </div>
-                    <div class="color-item item21">
-
-                    </div>
-                    <div class="color-item item22">
-                        
-                    </div>
-                    <div class="color-item item23">
-
-                    </div>
-                    <div class="color-item item24">
-                        
-                    </div>
-                    
-                </div>
-                <div class="choose-show-bg">
-                   <div class="checkChoose">
-
-                   </div>
-                   <h6>SHOWHEADER BACKGROUND IMAGE</h6>
-                    
-                </div>
-               
-               
+    <div id="small-contact">
+        <div id="btnCloseContact" onclick="closeSmallContact()">
+         <i class="fas fa-times"></i>
+        </div>
+        <div class="small-contact-inner" id="style4">
+         <div class="introduce-contact">
+             <img src="https://rscard.px-lab.com/html/img/uploads/rs-photo-v1.jpg" alt="">
+              <h1>Robert Smith</h1>
+              <p>Developer and Startup entrepreneur</p>
+          </div>
+          <hr>
+          <div class="search-contact">
+                 <input class="search-field" type="search" placeholder="Search ">
+                 <i class="fas fa-search"></i>
+          </div>
+          <div class=" small-contact-me">
+             <h3 >CONTACT ME</h3>
+             <br>
+             <div class="form-group">
+                 <input type="text" id="name" class="form-control" required>
+                 <label class="form-control-placeholder" for="name">
+                    NAME
+                 </label>
+                 <div class="border"></div>
+                 </div>
+                 <div class="form-group">
+                     <input type="email" id="name" class="form-control" required>
+                     <label class="form-control-placeholder" for="name">
+                        EMAIL
+                     </label>
+                     <div class="border"></div>
+                     </div>
+                     <div class="form-group">
+                         <input type="text" id="name" class="form-control" required>
+                         <label class="form-control-placeholder" for="name">
+                            SUBJECT
+                         </label>
+                         <div class="border"></div>
+                         </div>
+                         <div class="form-group">
+                             <input type="text" id="mess" class="form-control" required>
+                             <label class="form-control-placeholder" for="name">
+                             MESSAGE
+                             </label>
+                             <div class="border mess" ></div>
+                             </div>
+                             <button class="small-contact-send" >SEND</button>
+                            
+         </div>
+         <div class="popular-port">
+             <h3 class="contact-content">POPULAR POSTS</h3>
+             <div class="small-post">
+                 <div class="post">
+                     <img src="https://techkalzen.com/wp-content/uploads/2020/09/Forrest-Gump.jpg" alt="">
+                     <span>STANDARD POST FORMAT WITH FEATURED IMAGE</span>
+                 </div>
+                 <div class="post-comment">
+                       <i class="fas fa-comments"></i>
+                       <span>56 comments</span>
+                 </div>
+     
+             </div>
+             <div class="small-post">
+                 <div class="post">
+                     <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="">
+                     <span>STANDARD POST FORMAT WITH FEATURED IMAGE</span>
+                 </div>
+                 <div class="post-comment">
+                       <i class="fas fa-comments"></i>
+                       <span>56 comments</span>
+                 </div>
+     
+             </div>
+             <div class="small-post">
+                 <div class="post">
+                     <img src="https://images.unsplash.com/photo-1539651044670-315229da9d2f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                     <span>STANDARD POST FORMAT WITH FEATURED IMAGE</span>
+                 </div>
+                 <div class="post-comment">
+                       <i class="fas fa-comments"></i>
+                       <span>56 comments</span>
+                 </div>
+     
+             </div>
+         </div>
+         <div class="tag-clound">
+             <h3 class="contact-content">TAG CLOUND</h3>
+             <div class="tagclound">
+                     <a href="" title="1 topic">Business</a>
+                     <a href="" title="9 topics">City</a>
+                     <a href="" title="10 topics">Creative</a>
+                     <a href="" title="6 topics">Fashion</a>
+                     <a href="" title="2 topics">Music</a>
+                     <a href="" title="5 topics">News</a>
+                     <a href="" title="9 topics">Peoples</a>
+             </div>
+         </div>
+        <div class="recent-post">
+            <h3 class="contact-content">RECENT POSTS</h3>
+            <div class="recent-small">
+                 <div class="recent-tag">
+                     <p>#PHOTO</p>
+                     <p>#ARCHITECT</p>
+                 </div>
+                 <h4>STANDARD POST FORMAT WITH FEATURED IMAGE</h4>
+                 <div class="post-comment">
+                     <i class="fas fa-comments"></i>
+                     <span>56 comments</span>
+               </div>
+             </div>
+             <div class="recent-small">
+                 <div class="recent-tag">
+                     <p>#PHOTO</p>
+                     <p>#ARCHITECT</p>
+                 </div>
+                 <h4>STANDARD POST FORMAT WITH FEATURED IMAGE</h4>
+                 <div class="post-comment">
+                     <i class="fas fa-comments"></i>
+                     <span>56 comments</span>
+               </div>
+             </div>
+             <div class="recent-small">
+                 <div class="recent-tag">
+                     <p>#PHOTO</p>
+                     <p>#ARCHITECT</p>
+                 </div>
+                 <h4>STANDARD POST FORMAT WITH FEATURED IMAGE</h4>
+                 <div class="post-comment">
+                     <i class="fas fa-comments"></i>
+                     <span>56 comments</span>
+               </div>
+             </div>
+        </div>
+        <div class="categories">
+            <h3 class="contact-content">CATEGORIES</h3>
+            <div class="small-category">
+                 <p id="name-category">Architecture</p>
+                 <p>(9)</p>
             </div>
+            <div class="small-category">
+                 <p id="name-category">Buisiness</p>
+                 <p>(16)</p>
+           </div>
+           <div class="small-category">
+             <p id="name-category">Creative</p>
+             <p>(18)</p>
+          </div>
+         <div class="small-category">
+             <p id="name-category">Design</p>
+             <p>(10)</p>
+         </div>
+         <div class="small-category">
+             <p id="name-category">Development</p>
+             <p>(14)</p>
+         </div>
+         <div class="small-category">
+             <p id="name-category">Education</p>
+             <p>(9)</p>
+         </div>
+  </div>
+   </div>
+<!-- Setting color -->
+<div id="setting-color">
+    <div id="choose-color">
+        <div class="choose-item">
+            <p id="light">LIGHT</p>
+            <p id="dark">DARK</p>
+        </div>
+        <div class="control-color">
+            <hr class="line-color">
+            <div class="control"></div>
+        </div>
+        <div class="color">
+            <div class="color-item item1">
 
-            <button id="btn-setting-color" onclick="setColorFunction(event)">
-                    
-                <i class="fas fa-cog"></i>
-            </button>
+            </div>
+            <div class="color-item item2">
+                
+            </div>
+            <div class="color-item item3">
 
+            </div>
+            <div class="color-item item4">
+                
+            </div>
+            
+            <div class="color-item item5">
+
+            </div>
+            <div class="color-item item6">
+                
+            </div>
+            
+            <div class="color-item item7">
+
+            </div>
+            <div class="color-item item8">
+                
+            </div>
+            
+            <div class="color-item item9">
+
+            </div>
+            <div class="color-item item10">
+                
+            </div>
+            
+            <div class="color-item item11">
+
+            </div>
+            <div class="color-item item12">
+                
+            </div>
+            
+            <div class="color-item item13">
+
+            </div>
+            <div class="color-item item14">
+                
+            </div>
+            
+            <div class="color-item item15">
+
+            </div>
+            <div class="color-item item16">
+                
+            </div>
+            
+        </div>
+        <hr class="line-color line2">
+        <div class="color">
+            <div class="color-item item17">
+
+            </div>
+            <div class="color-item item18">
+                
+            </div>
+            <div class="color-item item19">
+
+            </div>
+            <div class="color-item item20">
+                
+            </div>
+            <div class="color-item item21">
+
+            </div>
+            <div class="color-item item22">
+                
+            </div>
+            <div class="color-item item23">
+
+            </div>
+            <div class="color-item item24">
+                
+            </div>
+            
+        </div>
+        <div class="choose-show-bg">
+           <div class="checkChoose">
+
+           </div>
+           <h6>SHOWHEADER BACKGROUND IMAGE</h6>
+            
         </div>
        
+       
+    </div>
+
+    <button id="btn-setting-color" onclick="settingColorFunction(event)">
+            
+        <i class="fas fa-cog"></i>
+    </button>
+
+</div>
+    </div>
+    <div class="container">
+   
+        
+       <!-- Phaanf infomation-small -->
+   
         <div class="header" style="min-height:126px">
                 <div class="header-bg" >
                     
@@ -145,58 +311,63 @@
                             <div class="header-menu">
                                 <div class="header-menu-inner">
                                    <div class="menu-nav">
-                                       <ul >
-                                           <li>
-                                               <a href="#profile-box">
-                                                   About
-                                                   <span class="active"></span>
-                                               </a>
-                                           </li>
-                                           <li >
-                                               <a href="#professional" >
-                                                   Skill
-                                                   <span ></span>
-                                               </a>
-                                           </li>
-                                           <li >
-                                            <a href="#porfolio">
+                                       <div id="menu-item">
+                                        <ul onclick="activeFunction(event)" id="test">
+                                            <li>
+                                                <a href="#profile-box" class="active headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                    ABOUT
+                                                 
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="#professional" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)" >
+                                                    SKILLS
+                                                 
+                                                </a>
+                                            </li>
+                                            <li >
+                                             <a href="#porfolio" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                 
+                                                 PORFOLIO
+                                               
+                                             </a>
+                                         </li>
+                                         <li >
+                                             <a href="#work-experience" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                 EXPERIENCE
                                                 
-                                                Portfolio
-                                                <span ></span>
-                                            </a>
-                                        </li>
-                                        <li >
-                                            <a href="#work-experience" >
-                                                Experience
-                                                <span ></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#reference" >
-                                                References
-                                                <span ></span>
-                                            </a>
-                                        </li>
-                                        <li >
-                                            <a href="#" >
-                                                Blog
-                                                <span ></span>
-                                            </a>
-                                        </li>
-                                        <li >
-                                            <a href="#availability-calendar" >
-                                                Calender
-                                                <span ></span>
-                                            </a>
-                                        </li>
-                                        <li >
-                                            <a href="#contact-me" >
-                                                Contact
-                                                <span ></span> 
-                                            </a>
-                                        </li>
-                                       </ul>
-                                       <div >
+                                             </a>
+                                         </li>
+                                         <li>
+                                             <a href="#reference" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                 REFERENCES
+                                               
+                                             </a>
+                                         </li>
+                                         <li >
+                                             <a href="#" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                 BLOG
+                                                 
+                                             </a>
+                                         </li>
+                                         <li >
+                                             <a href="#availability-calendar" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                 CALENDAR
+                                                
+                                             </a>
+                                         </li>
+                                         <li >
+                                             <a href="#contact-me" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)" >
+                                                 CONTACT
+                                                
+                                             </a>
+                                         </li>
+                                         
+                                        </ul>
+                                        <div id="menu-reposive">MENU</div>
+                                       </div>
+                                       
+                                       <div id="setting-menu" onclick="showSmallContact()">
                                         <i class="fas fa-sliders-h"></i>
                                        </div>
                                    </div>
@@ -1038,11 +1209,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-linkify/2.1.6/linkify.min.js"></script>
 
     <script type="text/javascript">
-        window.adddEventListener("scroll",function(){
-            var header=document.querySelector("header-bar")
-            header.classList.toggle("sticky",window.scrollY>0)
+
+       window.addEventListener('scroll',function (e){
+            var header=document.querySelector(".header-bar")
+            header.classList.toggle("sticky",window.scrollY>0);  
         })
-    </script>
+        
+     </script>
     <script src="scrip.js"></script>
+   
+    
+    
 </body>
 </html>

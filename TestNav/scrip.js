@@ -1,70 +1,66 @@
-console.log("$$$$")
 
-let chooseColor=document.getElementById("setting-color")
-console.log(chooseColor)
-function setColorFunction(event){
-   
-    var x = event.clientX;
-    console.log(x)
-   if(x>200) {
-    chooseColor.style.transition="0.5s"
-    chooseColor.style.transform="translateX(-80%)"
-   }
-    else {
-    chooseColor.style.transition="0.5s"
-    chooseColor.style.transform="translateX(0%)"
-    console.log("hello")
+
+  function activeFunction(e) {
+    var elems = document.querySelector(".active");
+    if(elems !==null){
+     elems.classList.remove("active");
     }
-}
-
-///Làm phần trượt chỗ navbar 
-// const sections = document.querySelectorAll("section")
-// console.log(sections)
-// const navLi=document.querySelectorAll(".menu-nav ul li")
-// console.log(navLi)
-
-// window.addEventListener("scroll",()=>{
-//     let current="";
-    
-//     // sections.forEach(section=>{
-//     //     const sectionTop = section.offsetTop;
-//     //     const sectionHeight = section.clientHeight;
-        
-//     //     if(pageYOffset-1000>=sectionTop){
-//     //         current=section.getAttribute("id");
-//     //     }
-//     // })
-//     // navLi.forEach(li=>{
-//     //     li.classList.remove("active");
-//     //     if(li.classList.contains(current)){
-//     //         li.classList.add("active");
-//     //     }
-//     // })
+   e.target.className = "active";
    
-// })
-// window.addEventListener("scroll",()=>{
-//     console.log("start")
-//     console.log(pageYOffset);
-// })
+}
+//Lam phan setting color 
+function settingColorFunction(event){
+  var x = event.clientX;
+  let settingColor=document.querySelector("#setting-color")
+  settingColor.style.transition="0.5s"
+  if(x<50){
+    settingColor.style.left="0%"
+  }
+  if(x>200){
+    settingColor.style.left="-17%";
+  }
+ 
+}
+// kiểm soát phần contact small
+function showSmallContact(){
+  let contact=document.querySelector("#small-contact")
+  let bodi=document.querySelector(".container");
 
-//dung thuoc tinh xoa
-// let menuItem = document.querySelectorAll(".menu-nav ul li span")
-// menuItem.forEach(item=>{
-//     item.classList.remove("active");
-//     console.log("da delete")
-// })
+  contact.style.transition="0.5s";
+  contact.style.right="0%"
+  bodi.style.transition="0.5s"
+  bodi.style.backgroundColor="#000"
+  bodi.style.opacity="0.7"
+  
+}
+// Tắt phần contact small 
+function closeSmallContact(){
+  let contact=document.querySelector("#small-contact")
+  let bodi=document.querySelector(".container");
+
+  contact.style.transition="0.5s";
+  contact.style.right="-30%"
+  bodi.style.transition="0.5s"
+  bodi.style.backgroundColor="var(--bg-color)"
+  bodi.style.opacity="1"
+}
+// 0.5px solid rgb(109, 99, 99
+//Thay đổi màu cho phần header khi trượt xuống 
+window.addEventListener('scroll',function (e){
+  var test=document.querySelectorAll(".headerItem")
+  let btnSetting=document.querySelector("#setting-menu")
+  test.forEach(function(item){
+    item.style.color="var(--headerafter-color)"
+    btnSetting.style.color="var(--headerafter-color)"
+    btnSetting.style.border="0.5px solid rgb(221, 210, 210)"
+  })
+  if(window.scrollY==0){
+    test.forEach(function(item){
+      item.style.color="var(--headerbefore-color)"
+      btnSetting.style.color="var(--headerbefore-color)"
+      btnSetting.style.border=" 0.5px solid rgb(109, 99, 99)"
+    })
+  }
+})
 
 
-// thu nghiem
-// window.addEventListener("scroll",()=>{
-//     console.log("start")
-//     let por=document.getElementById("porfolio")
-//     let x=por.offsetTop;
-//     console.log("offset cua porfolio")
-//     console.log(x);
-//     console.log("offpageY")
-//     console.log(pageYOffset)
-// })
-
-
-console.log("@@@@")
