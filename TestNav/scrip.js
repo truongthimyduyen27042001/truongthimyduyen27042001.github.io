@@ -2,6 +2,10 @@ let bodi=document.querySelector(".container");
 let control=document.querySelector("#control")
 let contact=document.querySelector("#small-contact")
 let settingColor=document.querySelector("#setting-color")
+var test=document.querySelectorAll(".headerItem")
+var activetest=document.querySelector(".active")
+let btnSetting=document.querySelector("#setting-menu")
+let btnMenu=document.querySelector("#menu-reposive")
 
 function activeFunction(e) {
    var elems = document.querySelector(".active");
@@ -14,35 +18,33 @@ function activeFunction(e) {
 //Lam phan setting color 
 function settingColorFunction(event){
   var x = event.clientX;
-
+  console.log(x)
   settingColor.style.transition="0.5s"
   if(x<50){
-    settingColor.style.left="0%"
+    console.log("day ra")
+    settingColor.style.left="0px"
   }
-  if(x>200){
-    settingColor.style.left="-17%";
+  if(x>50){
+    console.log("day vao")
+    settingColor.style.left="-250px";
   }
  
 }
 // kiểm soát phần contact small
 function showSmallContact(){
- 
-
-  contact.style.transition="0.8s";
+  contact.style.transition="0.5s";
   contact.style.right="0%"
-  bodi.style.transition="0.5s"
+  bodi.style.transition="0.2s"
   bodi.style.backgroundColor="#000"
-  bodi.style.opacity="0.7"
-  
+  bodi.style.opacity="0.7" 
 }
 // Tắt phần contact small 
 function closeSmallContact(){
   let contact=document.querySelector("#small-contact")
   let bodi=document.querySelector(".container");
-
   contact.style.transition="0.8s";
-  contact.style.right="-32%"
-  bodi.style.transition="0.5s"
+  contact.style.right="-50%"
+  bodi.style.transition="0.3s"
   bodi.style.backgroundColor="var(--bg-color)"
   bodi.style.opacity="1"
 }
@@ -50,17 +52,14 @@ function closeSmallContact(){
 //Thay đổi màu cho phần header khi trượt xuống 
 
 window.addEventListener('scroll',function (e){
- 
-  var test=document.querySelectorAll(".headerItem")
-  var activetest=document.querySelector(".active")
-  let btnSetting=document.querySelector("#setting-menu")
   if(window.scrollY>0){
     activetest.style.color="var(--headerafter-color)"
     test.forEach(function(item){
      
        item.style.color="var(--headerafter-color)"
-  
+
     })
+    btnMenu.style.border="0.5px solid rgb(221, 210, 210)"
     btnSetting.style.color="var(--headerafter-color)"
     btnSetting.style.border="0.5px solid rgb(221, 210, 210)"
   }
@@ -71,13 +70,13 @@ window.addEventListener('scroll',function (e){
        item.style.color="var(--headerbefore-color)"
      
     })
+    btnMenu.style.border="0.5px solid rgb(109, 99, 99)"
     btnSetting.style.color="var(--headerbefore-color)"
     btnSetting.style.border=" 0.5px solid rgb(109, 99, 99)"
   }
 })
 //Đổi back thành màu đen 
 function changeBlack(){
- 
     control.style.right="0%";
     bodi.style.backgroundColor="black"
 }
@@ -160,6 +159,5 @@ function changerColor23(){
 function changerColor24(){
   document.documentElement.style.setProperty('--main-color', '#a7d9a8');
 }
-
 
 

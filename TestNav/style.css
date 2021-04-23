@@ -40,32 +40,24 @@
     color:black;
     font-size:25px;
     position:fixed;
-    top:100px;
-    left:-17%;
+    top:80px;
+    left:-250px;
     z-index: 100;
     background-color:transparent;
    transition:5s ease-in inherit;
    cursor: pointer;
-
-}
-.setting-color>i{
-    width:55px;
-    height:55px;
-    border-radius:0px 3px 3px 0px;
-    background-color:#fff;
-    color:var(--content-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    background-color: yellow;
-     
+  
+   
 }
 #choose-color{
     padding:1em 0.5em;
     width:9em;
+    height:17em;
    background-color: #fff;
    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
-
+   flex-wrap: wrap;
+   
+   
 }
 .choose-item{
     width:80%;
@@ -94,6 +86,7 @@
     right:50%;
     transition:0.4s;
     animation:control-move 2s ease-in infinite;
+    
    
 }
 /* Thực hiện phần focus chỗ menu-setting-icon */
@@ -133,8 +126,7 @@
     padding:1.4em 1.4em;
     background-color: #fff;
     overflow-y: scroll;
-    overflow-x: hidden;
-   
+    overflow-x: hidden;   
     
 }
 .introduce-contact{
@@ -145,6 +137,7 @@
 .introduce-contact img{
     width:100%;
     height:18em;
+    object-fit: fill;
 }
 .introduce-contact p{
     font-weight: 400;
@@ -257,13 +250,11 @@
 .recent-small{
     border-bottom:1px solid var(--border-color);
     padding:1em 0em;
-   
 }
 .recent-tag {
     display: flex;
     font-size: 0.8em;
     margin-bottom:0.5em;
-
 }
 .recent-tag p{
     margin-right:0.5em;
@@ -296,19 +287,7 @@
 #name-category:hover{
     color:var(--main-color);
 }
-/* CSS cho scroll */
 
-/* @control-move{
-    from{
-        transform:translateX(0%);
-    }
-    to{
-        transform:translateY(100%);
-    }
-}
-#light:hover .control{
-    
-} */
 .line-color{
     width:100%;
     height:0.05em;
@@ -323,8 +302,9 @@
     padding:0.5em 0.5em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
    width: fit-content;
+    align-items: center;
 }
 .color-item{
     background-color: var(--main-color);
@@ -586,7 +566,7 @@
     color:var(--main-color);
     justify-content: center;
     padding:0.8em 1.2em;
-    border:0.5px solid var(--border-color);
+    border:0.5px solid rgb(109, 99, 99);
     display:none;
 }
 #setting-menu>i{
@@ -1148,21 +1128,32 @@
     display:flex;
     justify-content: center;
     align-items: center;
- 
+    
+   
 }
 .button-more{
     padding: 0.8em 1em;
     color:var(--button-color);
+    border:0.5px solid rgb(221, 210, 210) ;
+  transition:0.5s;
 }
 
-.button-show-inner:hover .button-show-inner{
-    box-shadow:5px 5px 20px rgb(160, 156, 156);
-}
-/* work-experience */
-#work-experience{
-    background-color:var(--bg-color);
+.button-more > i {
+    margin:auto;
+    font-size:1.5em;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
    
 }
+.button-show-more:hover .button-more > i{
+    transform:rotate(90deg);
+}
+
+.button-more:hover {
+    box-shadow:5px 5px 20px var(--shadow-color);
+}
+/* work-experience */
+
 .exp-work{
 
     display:flex;
@@ -1382,8 +1373,6 @@
 }
 /* phan reference */
 #reference{
-
-    background-color:var(--bg-color);
     display: flex;
     flex-direction: column;
    
@@ -2104,6 +2093,15 @@ align-items: center;
     }
     #menu-reposive{
         display:block;
+    }
+    #small-contact{
+        width:50%;
+    }
+    #choose-color{
+        width:8em;
+        height:16em;
+        overflow-y: scroll;
+        overflow-x: none;
     }
     
 

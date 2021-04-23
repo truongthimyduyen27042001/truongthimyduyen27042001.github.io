@@ -276,18 +276,17 @@
         </div>
         <div class="choose-show-bg">
            <div class="checkChoose">
-
            </div>
            <h6>SHOWHEADER BACKGROUND IMAGE</h6>    
         </div>       
     </div>
-    <button id="btn-setting-color" onclick="settingColorFunction(event)">            
+    <button id="btn-setting-color"  onclick="settingColorFunction(event)"> 
             <i class="fas fa-cog"></i>
     </button>
 
 </div>
     </div>
-    <div class="container">
+    <div class="container" >
        <!-- Phaanf infomation-small -->
         <div class="header" style="min-height:126px">
                 <div class="header-bg" >     
@@ -692,9 +691,9 @@
                         </div>
                         </section>
                     <div class="button-show-more">
-                           <button class="button-more">
+                           <div class="button-more">
                             <i class="fas fa-plus"></i>
-                           </button>
+                           </div>
                     </div>
                         <!-- Phan work experience thu nghiem -->
                      <section  id="work-experience">
@@ -1170,6 +1169,7 @@
                                 </div>
                                 <div class="box15-map">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.89310755083!2d4.305350265910779!3d50.85495409094146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2zQnLDumMteGVuLCBC4buJ!5e0!3m2!1svi!2s!4v1616749913146!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                   
                                     <div class="box15-before">
                                         <div class="map" id="map" name="map">
                                             <p>Bản đồ</p>
@@ -1211,7 +1211,26 @@
      </script>
     <script src="scrip.js"></script>
    
-    
+    <!-- thực hiện scrip chỗ map  -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN_uQgDSsJvWOa9DwpfB28l8PNtuOe76k&callback=initMap&libraries=&v=weekly"      async     ></script>
+    <script>
+        function initMap() {
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: { lat: 16.061055, lng: 108.228541 },
+          });
+          
+          const beachMarker = new google.maps.Marker({
+            position: { lat: 16.061055, lng: 108.228541 },
+            map,
+            icon: {url:"vietnam.png",
+            }
+          });
+        }
+        
+      </script> -->
+     
+  
     
 </body>
 </html>
