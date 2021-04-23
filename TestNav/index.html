@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestNav</title>
+    <title>Truong My Duyen</title>
     <link rel="stylesheet" href="style.css" class="rel">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -182,94 +182,94 @@
 <div id="setting-color">
     <div id="choose-color">
         <div class="choose-item">
-            <p id="light">LIGHT</p>
-            <p id="dark">DARK</p>
+            <p id="light" onclick="changeWhite()">LIGHT</p>
+            <p id="dark" onclick="changeBlack()">DARK</p>
         </div>
         <div class="control-color">
             <hr class="line-color">
-            <div class="control"></div>
+            <div id="control"></div>
         </div>
         <div class="color">
-            <div class="color-item item1">
+            <div class="color-item item1" onclick="changerColor1()">
 
             </div>
-            <div class="color-item item2">
+            <div class="color-item item2"  onclick="changerColor2()">
                 
             </div>
-            <div class="color-item item3">
+            <div class="color-item item3"  onclick="changerColor3()">
 
             </div>
-            <div class="color-item item4">
-                
-            </div>
-            
-            <div class="color-item item5">
-
-            </div>
-            <div class="color-item item6">
+            <div class="color-item item4"  onclick="changerColor4()">
                 
             </div>
             
-            <div class="color-item item7">
+            <div class="color-item item5"  onclick="changerColor5()">
 
             </div>
-            <div class="color-item item8">
+            <div class="color-item item6"  onclick="changerColor6()">
                 
             </div>
             
-            <div class="color-item item9">
+            <div class="color-item item7"  onclick="changerColor7()">
 
             </div>
-            <div class="color-item item10">
+            <div class="color-item item8"  onclick="changerColor8()">
                 
             </div>
             
-            <div class="color-item item11">
+            <div class="color-item item9"  onclick="changerColor9()">
 
             </div>
-            <div class="color-item item12">
+            <div class="color-item item10"  onclick="changerColor10()">
                 
             </div>
             
-            <div class="color-item item13">
+            <div class="color-item item11"  onclick="changerColor11()">
 
             </div>
-            <div class="color-item item14">
+            <div class="color-item item12"  onclick="changerColor12()">
                 
             </div>
             
-            <div class="color-item item15">
+            <div class="color-item item13"  onclick="changerColor13()">
 
             </div>
-            <div class="color-item item16">
+            <div class="color-item item14"  onclick="changerColor14()">
+                
+            </div>
+            
+            <div class="color-item item15"  onclick="changerColor15()">
+
+            </div>
+            <div class="color-item item16"  onclick="changerColor16()">
                 
             </div>
             
         </div>
         <hr class="line-color line2">
         <div class="color">
-            <div class="color-item item17">
+            <div class="color-item item17"  onclick="changerColor17()"> 
 
             </div>
-            <div class="color-item item18">
+            <div class="color-item item18"  onclick="changerColor18()">
                 
             </div>
-            <div class="color-item item19">
+            <div class="color-item item19"  onclick="changerColor19()">
 
             </div>
-            <div class="color-item item20">
+            <div class="color-item item20"  onclick="changerColor20()">
                 
             </div>
-            <div class="color-item item21">
+            <div class="color-item item21"  onclick="changerColor21()">
 
             </div>
-            <div class="color-item item22">
+            <div class="color-item item22"  onclick="changerColor22()">
                 
             </div>
-            <div class="color-item item23">
+            <div class="color-item item23"  onclick="changerColor23()">
 
             </div>
-            <div class="color-item item24">
+            <div class="color-item item24"  onclick="changerColor24()">
                 
             </div>
             
@@ -278,28 +278,19 @@
            <div class="checkChoose">
 
            </div>
-           <h6>SHOWHEADER BACKGROUND IMAGE</h6>
-            
-        </div>
-       
-       
+           <h6>SHOWHEADER BACKGROUND IMAGE</h6>    
+        </div>       
     </div>
-
-    <button id="btn-setting-color" onclick="settingColorFunction(event)">
-            
-        <i class="fas fa-cog"></i>
+    <button id="btn-setting-color" onclick="settingColorFunction(event)">            
+            <i class="fas fa-cog"></i>
     </button>
 
 </div>
     </div>
     <div class="container">
-   
-        
        <!-- Phaanf infomation-small -->
-   
         <div class="header" style="min-height:126px">
-                <div class="header-bg" >
-                    
+                <div class="header-bg" >     
                 </div>
                 <div class="header-bar animated">
                     <div class="header-bar-inner">
@@ -312,52 +303,53 @@
                                 <div class="header-menu-inner">
                                    <div class="menu-nav">
                                        <div id="menu-item">
+                                           <!-- onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)" -->
                                         <ul onclick="activeFunction(event)" id="test">
                                             <li>
-                                                <a href="#profile-box" class="active headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                                <a href="#profile-box" class="active headerItem"  >
                                                     ABOUT
                                                  
                                                 </a>
                                             </li>
                                             <li >
-                                                <a href="#professional" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)" >
+                                                <a href="#professional" class="headerItem" " >
                                                     SKILLS
                                                  
                                                 </a>
                                             </li>
                                             <li >
-                                             <a href="#porfolio" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                             <a href="#porfolio" class="headerItem" >
                                                  
                                                  PORFOLIO
                                                
                                              </a>
                                          </li>
                                          <li >
-                                             <a href="#work-experience" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                             <a href="#work-experience" class="headerItem">
                                                  EXPERIENCE
                                                 
                                              </a>
                                          </li>
                                          <li>
-                                             <a href="#reference" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                             <a href="#reference" class="headerItem">
                                                  REFERENCES
                                                
                                              </a>
                                          </li>
                                          <li >
-                                             <a href="#" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                             <a href="#" class="headerItem" >
                                                  BLOG
                                                  
                                              </a>
                                          </li>
                                          <li >
-                                             <a href="#availability-calendar" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)">
+                                             <a href="#availability-calendar" class="headerItem" >
                                                  CALENDAR
                                                 
                                              </a>
                                          </li>
                                          <li >
-                                             <a href="#contact-me" class="headerItem" onmouseenter="mouseEnter(this)" onmouseleave="mouseMover(this)" >
+                                             <a href="#contact-me" class="headerItem"  >
                                                  CONTACT
                                                 
                                              </a>
@@ -434,7 +426,8 @@
                             </div>
                         </div>
                       </div>  
-                      <div class="profile-social">
+                    </section>
+                    <div class="profile-social">
                         <div class="icon">
                             <div class="icon1">
                                 <i class="fab fa-facebook-f"></i>
@@ -451,7 +444,6 @@
                                  <i class="fab fa-instagram"></i> </div>
                         </div>  
                       </div>
-                    </section>
                     <div  id="profile-content">
                         <button class="download">DOWNLOAD RESUME</button>
                         <div class="profile-content-text">
@@ -1212,7 +1204,8 @@
 
        window.addEventListener('scroll',function (e){
             var header=document.querySelector(".header-bar")
-            header.classList.toggle("sticky",window.scrollY>0);  
+            header.classList.toggle("sticky",window.scrollY>0);
+              
         })
         
      </script>
