@@ -1514,7 +1514,7 @@
     color:#fff;
     font-size:12px;
     background-color:red;
-    left:66%;
+    left:105%;
     border-radius: 4px;
 }
 #box10-line{
@@ -1557,9 +1557,7 @@
 .box10-color{
 
     background-color:var(--main-color);
-    
 
-    
 }
 .box10-color::before{
     background-color:var(--main-color); 
@@ -1577,6 +1575,7 @@
     background-color:red;
     left:74%;
     border-radius: 4px;
+    
 }
 /* from the blog */
 #from-the-blog{
@@ -1755,10 +1754,11 @@ align-items: center;
       
 }
 .box-14{
-    width:900px;
+   
     background-color:#fff;
     overflow:visible;
     display:flex;
+   
 }
 .box-14-left{
     width:35%;
