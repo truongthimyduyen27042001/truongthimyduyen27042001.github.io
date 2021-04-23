@@ -1485,7 +1485,11 @@
     width:100%;
     padding:2em 0;
     background-color: #fff; 
-    color:var(--namecommentor-color)
+    color:var(--namecommentor-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .box10-center>p{
     text-align: center;
@@ -1534,11 +1538,13 @@
     border-radius: 3px;
     margin:auto;
     border:1px solid var(--border-color);
-    margin:2em 0em 0.5em 7em;
+   
     background-color: #fff;
     color:#373b42;
     transition:0.3s;
     font-weight: 600;
+ 
+  
    
 }
 .buynow:hover{
