@@ -7,7 +7,8 @@ var activetest=document.querySelector(".active")
 let btnSetting=document.querySelector("#setting-menu")
 let btnMenu=document.querySelector("#menu-reposive")
 let menuItem=document.querySelector(".mobile-nav")
-
+let icon1=document.querySelectorAll(".extend .icon1")
+let extend=document.querySelector(".extend .icon")
 function activeFunction(e) {
    var elems = document.querySelector(".active");
     if(elems !==null){
@@ -27,7 +28,6 @@ function settingColorFunction(event){
   if(x>50){
     settingColor.style.left="-250px";
   }
- 
 }
 // kiểm soát phần contact small
 function showSmallContact(){
@@ -36,6 +36,7 @@ function showSmallContact(){
   bodi.style.transition="0.2s"
   bodi.style.backgroundColor="#000"
   bodi.style.opacity="0.7" 
+  extend.classList.add("blackChange") 
 }
 // Tắt phần contact small 
 function closeSmallContact(){
@@ -46,6 +47,7 @@ function closeSmallContact(){
   bodi.style.transition="0.3s"
   bodi.style.backgroundColor="var(--bg-color)"
   bodi.style.opacity="1"
+  extend.classList.remove("blackChange") 
 }
 // Kiểm soát phần menu-small-item
 function closeMenuItem(){
@@ -54,8 +56,7 @@ function closeMenuItem(){
   menuItem.style.transition="0.5s"
   bodi.style.transition="0.3s"
   bodi.style.backgroundColor="var(--bg-color)"
-  bodi.style.opacity="1"
- 
+  bodi.style.opacity="1" 
 }
 // Mở phần menuItem
 function showMenuItem(){
@@ -68,12 +69,10 @@ function showMenuItem(){
 
 // 0.5px solid rgb(109, 99, 99
 //Thay đổi màu cho phần header khi trượt xuống 
-
 window.addEventListener('scroll',function (e){
   if(window.scrollY>0){
     activetest.style.color="var(--headerafter-color)"
     test.forEach(function(item){
-     
        item.style.color="var(--headerafter-color)"
 
     })
@@ -81,7 +80,6 @@ window.addEventListener('scroll',function (e){
     btnSetting.style.color="var(--headerafter-color)"
     btnSetting.style.border="0.5px solid rgb(221, 210, 210)"
   }
-  
   if(window.scrollY==0){
     activetest.style.color="var(--headerbefore-color)"
     test.forEach(function(item){
@@ -96,11 +94,13 @@ window.addEventListener('scroll',function (e){
 //Đổi back thành màu đen 
 function changeBlack(){
     control.style.right="0%";
-    bodi.style.backgroundColor="black"
+    bodi.style.backgroundColor="#27292e"
+    extend.classList.add("blackChange") 
 }
 //Đổi thành màu trắng 
 function changeWhite(){
-  control.style.right="50%";
+    control.style.right="50%";
+    extend.classList.remove("blackChange")
     bodi.style.backgroundColor="var(--bg-color)"
 }
 
@@ -179,4 +179,4 @@ function changerColor24(){
 }
 
 
-// Thay đổi chỗ reference 
+// Thay đổi chỗ finally , nếu chuyển sang đen
