@@ -6,6 +6,7 @@ var test=document.querySelectorAll(".headerItem")
 var activetest=document.querySelector(".active")
 let btnSetting=document.querySelector("#setting-menu")
 let btnMenu=document.querySelector("#menu-reposive")
+let menuItem=document.querySelector(".mobile-nav")
 
 function activeFunction(e) {
    var elems = document.querySelector(".active");
@@ -21,11 +22,9 @@ function settingColorFunction(event){
   console.log(x)
   settingColor.style.transition="0.5s"
   if(x<50){
-    console.log("day ra")
     settingColor.style.left="0px"
   }
   if(x>50){
-    console.log("day vao")
     settingColor.style.left="-250px";
   }
  
@@ -48,6 +47,25 @@ function closeSmallContact(){
   bodi.style.backgroundColor="var(--bg-color)"
   bodi.style.opacity="1"
 }
+// Kiểm soát phần menu-small-item
+function closeMenuItem(){
+  
+  menuItem.style.transform=" translateX(100%)"
+  menuItem.style.transition="0.5s"
+  bodi.style.transition="0.3s"
+  bodi.style.backgroundColor="var(--bg-color)"
+  bodi.style.opacity="1"
+ 
+}
+// Mở phần menuItem
+function showMenuItem(){
+  menuItem.style.transform="translateX(0%)"
+  menuItem.style.transition="0.5s"
+  bodi.style.transition="0.2s"
+  bodi.style.backgroundColor="#000"
+  bodi.style.opacity="0.7" 
+}
+
 // 0.5px solid rgb(109, 99, 99
 //Thay đổi màu cho phần header khi trượt xuống 
 
@@ -161,3 +179,4 @@ function changerColor24(){
 }
 
 
+// Thay đổi chỗ reference 
