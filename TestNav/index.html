@@ -27,6 +27,12 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- wow -->
     <link rel="stylesheet" href="animate.css">
+    <!-- Duyen moi add vao -->
+   <script 
+        src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous">
+    </script>
 <body>
     <div id="small-contact">
         <div id="btnCloseContact" onclick="closeSmallContact()">
@@ -548,7 +554,9 @@
                                 <div class="bar-language">Wordpress</div>
                                 <div class="bar-value">80%</div>
                             </div>
-                            <div class="bar-skill">
+                            <div class="progress">
+                                <div class="progress-done" data-done="80">
+                                </div>
                             </div>
                         </div>
                         <div class="profess-bar">
@@ -557,7 +565,9 @@
                                 </div>
                                 <div class="bar-value">52%</div>
                             </div>
-                            <div class="bar-skill java">
+                            <div class="progress">
+                                <div class="progress-done" data-done="52">
+                                </div>
                             </div>
                         </div>
                         <div class="profess-bar">
@@ -566,7 +576,9 @@
                                 </div>
                                 <div class="bar-value">61%</div>
                             </div>
-                            <div class="bar-skill drupal">
+                            <div class="progress">
+                                <div class="progress-done" data-done="61">
+                                </div>
                             </div>
                         </div>
 
@@ -576,7 +588,9 @@
                                 </div>
                                 <div class="bar-value ">89%</div>
                             </div>
-                            <div class="bar-skill html">
+                            <div class="progress">
+                                <div class="progress-done" data-done="89">
+                                </div>
                             </div>
                         </div>
                         <div class="profess-bar">
@@ -584,7 +598,9 @@
                                 <div class="bar-language">PHP & MySQL</div>
                                 <div class="bar-value">99%</div>
                             </div>
-                            <div class="bar-skill php">
+                            <div class="progress">
+                                <div class="progress-done" data-done="99">
+                                </div>
                             </div>
                         </div>
                         <div class="profess-bar">
@@ -592,7 +608,9 @@
                                 <div class="bar-language">Photoshop</div>
                                 <div class="bar-value">97%</div>
                             </div>
-                            <div class="bar-skill photoshop">
+                            <div class="progress">
+                                <div class="progress-done" data-done="97">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -613,47 +631,49 @@
                             <div class="port-grid-box">
                                 <!-- box1 -->
                                 <div class=" grid-box grid-box1">
+                                    <!-- ****** -->
                                     <div class="anh-inner">
-                                        <img src="https://images.unsplash.com/photo-1438109491414-7198515b166b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        <div class="anh-main">
+                                             <img src="https://images.unsplash.com/photo-1438109491414-7198515b166b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                                             alt="hinhanh">
-                                       
-                                    </div>
-                                    <div class="anh-shadow">
-
-                                        <div class="anh-shadow-inner">
-                                            <h2>Street Photography</h2>
-                                            <h4>PHOTOGRAPHY</h4>
-                                            <div class="shadow-icon">
-                                                <i class="fas fa-link"></i>
-                                                <i class="fas fa-eye"></i>
-                                            </div>
                                         </div>
+                                        <div class="anh-shadow">
 
-                                </div>
-                                    
+                                            <div class="anh-shadow-inner">
+                                                <h2>Street Photography</h2>
+                                                <h4>PHOTOGRAPHY</h4>
+                                                <div class="shadow-icon">
+                                                    <i class="fas fa-link"></i>
+                                                    <i class="fas fa-eye"></i>
+                                                </div>
+                                            </div>
+                                    </div>               
+                                    </div>
+                                 
                                 </div>
                                 <!-- box2 -->
                                 <div class="grid-box grid-box2">
-                                    <div class="anh">
-                                        <img src="https://images.unsplash.com/photo-1577367774979-a791491406f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                                    <div class="anh-inner">
+                                        <div class="anh-main">
+                                            <img src="https://images.unsplash.com/photo-1577367774979-a791491406f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
                                             alt="" class="src">
-                                    </div>
-                                    <div class="anh-shadow">
-
-                                        <div class="anh-shadow-inner">
-                                            <h2>Street Photography</h2>
-                                            <h4>PHOTOGRAPHY</h4>
-                                            <div class="shadow-icon">
-                                                <i class="fas fa-link"></i>
-                                                <i class="fas fa-eye"></i>
-                                            </div>
                                         </div>
+                                        <div class="anh-shadow">
 
+                                            <div class="anh-shadow-inner">
+                                                <h2>Street Photography</h2>
+                                                <h4>PHOTOGRAPHY</h4>
+                                                <div class="shadow-icon">
+                                                    <i class="fas fa-link"></i>
+                                                    <i class="fas fa-eye"></i>
+                                                </div>
+                                            </div>
+                                    </div>               
                                     </div>
                                 </div>
                                 <!-- box3 -->
                                 <div class="grid-box grid-box2">
-                                    <div class="anh">
+                                    <!-- <div class="anh">
                                         <img src="https://images.unsplash.com/photo-1577367774979-a791491406f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
                                             alt="" class="src">
                                     </div>
@@ -669,15 +689,33 @@
                                         </div>
 
                                     </div>
+                                </div> -->
+                                <div class="anh-inner">
+                                    <div class="anh-main">
+                                        <img src="https://images.unsplash.com/photo-1577367774979-a791491406f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                                        alt="" class="src">
+                                    </div>
+                                    <div class="anh-shadow">
+
+                                        <div class="anh-shadow-inner">
+                                            <h2>Street Photography</h2>
+                                            <h4>PHOTOGRAPHY</h4>
+                                            <div class="shadow-icon">
+                                                <i class="fas fa-link"></i>
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                        </div>
+                                </div>               
                                 </div>
-                            </div>
-                            <!-- port2 -->
-                            <div class="port-grid-box2">
-                                <!-- port4 -->
-                                <div class="grid-small2 grid-box4">
-                                    <div class="anh">
+                            </div>                           
+                        </div>
+                        <!-- thực hiện port2 -->
+                        <div class="port-grid-box2">
+                            <div class="grid-box grid-box2">
+                                <div class="anh-inner">
+                                    <div class="anh-main">
                                         <img src="https://images.unsplash.com/photo-1599140782241-144735f5949a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                            alt="" class="src">
+                                        alt="" class="src">
                                     </div>
                                     <div class="anh-shadow">
 
@@ -689,53 +727,14 @@
                                                 <i class="fas fa-eye"></i>
                                             </div>
                                         </div>
-
-                                    </div>
-                                </div>
-                                <!-- port5 -->
-                                <div class="grid-small2 grid-box5">
-                                    <div class="anh">
-                                        <img src="https://images.unsplash.com/photo-1515961896317-adf9e14bdcc0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                            alt="hinhanh" c>
-                                    </div>
-                                    <div class="anh-shadow">
-                                        <div class="anh-shadow-inner">
-                                            <h2>Street Photography</h2>
-                                            <h4>PHOTOGRAPHY</h4>
-                                            <div class="shadow-icon">
-                                                <i class="fas fa-link"></i>
-                                                <i class="fas fa-eye"></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- port6 -->
-                                <div class="grid-small2 grid-box6">
-                                    <div class="anh">
-                                        <img src="https://images.unsplash.com/photo-1568625436877-32b7763c93a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                            alt="hinhanh" c>
-                                    </div>
-                                    <div class="anh-shadow">
-                                        <div class="anh-shadow-inner">
-                                            <h2>Street Photography</h2>
-                                            <h4>PHOTOGRAPHY</h4>
-                                            <div class="shadow-icon">
-                                                <i class="fas fa-link"></i>
-                                                <i class="fas fa-eye"></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                </div>               
                                 </div>
                             </div>
-                            <!-- Gridbox3 -->
-                            <div class="port-grid-box">
-                                <div class=" grid-box grid-box2 grid-box7">
-                                    <div class="anh">
-                                        <img src="https://images.unsplash.com/photo-1562636800-b587b37f54b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1048&q=80"
-                                            alt="">
-
+                            <div class="grid-box grid-box2">
+                                <div class="anh-inner">
+                                    <div class="anh-main">
+                                        <img src="https://images.unsplash.com/photo-1515961896317-adf9e14bdcc0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        alt="" class="src">
                                     </div>
                                     <div class="anh-shadow">
 
@@ -747,15 +746,13 @@
                                                 <i class="fas fa-eye"></i>
                                             </div>
                                         </div>
-
-                                    </div>
+                                </div>               
                                 </div>
-                                <div class=" grid-box  grid-box2 grid-box8">
-
-                                    <div class="anh">
-                                        <img src="https://images.unsplash.com/photo-1575204642788-76a66d2131c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1018&q=80"
-                                            alt="" class="src">
-                                    </div>
+                            </div>
+                            <div class="grid-box grid-box2">
+                                <div class="anh-inner">
+                                    <div class="anh-main">
+                                        <img src="https://images.unsplash.com/photo-1568625436877-32b7763c93a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="hinhanh" c="">                                    </div>
                                     <div class="anh-shadow">
 
                                         <div class="anh-shadow-inner">
@@ -766,13 +763,16 @@
                                                 <i class="fas fa-eye"></i>
                                             </div>
                                         </div>
-
-                                    </div>
+                                </div>               
                                 </div>
-                                <div class=" grid-box grid-box9">
-                                    <div class="anh">
-                                        <img src="https://images.unsplash.com/photo-1577367774979-a791491406f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
-                                            alt="" class="src">
+                            </div>
+                        </div>
+                        <!-- Thực hiện port 3  -->
+                        <div class="port-grid-box3">
+                            <div class="grid-box grid-box2">
+                                <div class="anh-inner">
+                                    <div class="anh-main">
+                                        <img src="https://images.unsplash.com/photo-1562636800-b587b37f54b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1048&amp;q=80" alt="">
                                     </div>
                                     <div class="anh-shadow">
 
@@ -784,8 +784,43 @@
                                                 <i class="fas fa-eye"></i>
                                             </div>
                                         </div>
-
+                                </div>               
+                                </div>
+                            </div>
+                            <div class="grid-box grid-box2">
+                                <div class="anh-inner">
+                                    <div class="anh-main">
+                                        <img src="https://images.unsplash.com/photo-1575204642788-76a66d2131c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1018&amp;q=80" alt="" class="src">
                                     </div>
+                                    <div class="anh-shadow">
+
+                                        <div class="anh-shadow-inner">
+                                            <h2>Street Photography</h2>
+                                            <h4>PHOTOGRAPHY</h4>
+                                            <div class="shadow-icon">
+                                                <i class="fas fa-link"></i>
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                        </div>
+                                </div>               
+                                </div>
+                            </div>
+                            <div class="grid-box grid-box6">
+                                <div class="anh-inner">
+                                    <div class="anh-main">
+                                        <img src="https://images.unsplash.com/photo-1532597883259-4b593010e4ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                                    </div>
+                                    <div class="anh-shadow">
+
+                                        <div class="anh-shadow-inner">
+                                            <h2>Street Photography</h2>
+                                            <h4>PHOTOGRAPHY</h4>
+                                            <div class="shadow-icon">
+                                                <i class="fas fa-link"></i>
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                        </div>
+                                </div>               
                                 </div>
                             </div>
                         </div>
@@ -971,7 +1006,7 @@
                                 <h3>I have known Robert Smith for 10 years as web developer. I can confirm that he is a
                                     man of great integrity, is extremely dedicated to his family and work, and is
                                     entirely peace-loving.</h3>
-                                <!-- <hr> -->
+                                
                                 <div class="reference-inner-person">
                                     <img src="https://rscard.px-lab.com/html/img/uploads/rs-avatar-60x60.jpg"
                                         alt="hinhanh">
@@ -981,10 +1016,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="references-button">
-                                <i class="fas fa-chevron-right" class="slick-prev slick-arrow"></i>
-                                <i class="fas fa-chevron-left"></i>
-                            </div> -->
+                           
                         </div>    
                         
                         <div class="referece-inner">
@@ -993,7 +1025,6 @@
                             </div>
                             <div class="reference-inner-comment">
                                 <h3>I confirm that New Company Ltd has been a customer of ours since 1998, during which time they have always made payments reliably, in full and on time.</h3>
-                                <hr>
                                 <div class="reference-inner-person">
                                     <img src="https://rscard.px-lab.com/html/img/uploads/rs-avatar-60x60.jpg"
                                         alt="hinhanh">
@@ -1015,7 +1046,7 @@
                             </div>
                             <div class="reference-inner-comment">
                                 <h3>I confirm that I have dealt with New Company Ltd since 1998. Their work has been a major factor in our website's success, helping it to become one of the most visited resources of its kind on the Internet.</h3>
-                                <hr>
+                               
                                 <div class="reference-inner-person">
                                     <img src="https://rscard.px-lab.com/html/img/uploads/rs-avatar-60x60.jpg"
                                         alt="hinhanh">
@@ -1025,10 +1056,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="references-button">
-                                <i class="fas fa-chevron-right"></i>
-                                <i class="fas fa-chevron-left"></i>
-                            </div> -->
+                           
                         </div>  
                     </div>
                 </section>
@@ -1437,46 +1465,13 @@
         })
     </script>
     <script src="scrip.js"></script>
-    <!-- <script src="custom.js"></script> -->
-
-    <!-- thực hiện scrip chỗ map  -->
+   
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN_uQgDSsJvWOa9DwpfB28l8PNtuOe76k&callback=initMap&libraries=&v=weekly"
         async></script>
   
 
-                <!-- 
-            <script>
-                function initMap() {
-                    const map = new google.maps.Map(document.getElementById("box15-map"), {
-                    zoom: 8,
-                    center: { lat: 16.061055, lng: 108.228541 },
-                    });
-                    
-                    const beachMarker = new google.maps.Marker({
-                    position: { lat: 16.061055, lng: 108.228541 },
-                    map,
-                    
-                    });
-                }
-                
-                </script>
-                <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg_kw5A2cUoX5aUeV0SmdV3HMIAvK7_9E&callback=initMap&libraries=&v=weekly"
-                async
-            ></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-                <script>
-                $('.to-sh').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true
-                });
-                    
-                </script> -->
+          
     <!-- Thực hiện chỗ reference -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1498,12 +1493,39 @@
 
     <!-- Script tự chạy chỗ soft-ware skill -->
     <script>
+        console.log("@@@")
         $('.items').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
-        });
+        responsive: [
+            {
+            breakpoint: 1216,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+            },
+            {
+            breakpoint: 785,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 336,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+   
+            ]
+                });
+        
     </script>
     <!-- wow js -->
      <script src="wow.js"></script>
@@ -1511,8 +1533,8 @@
          new WOW().init();
          console.log("###")
      </script>
-    
-        
+     <!-- Thực hiện responsive cho software skill -->
+  
 </body>
 
 </html>

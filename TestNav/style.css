@@ -53,6 +53,7 @@
   box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
   flex-wrap: wrap;
 }
+
 .choose-item {
   width: 80%;
   margin: auto;
@@ -839,42 +840,35 @@
 }
 .bar-content {
   display: flex;
-
   justify-content: space-between;
   color: rgb(117, 110, 110);
   font-weight: 400;
 }
-.bar-language {
-  font-size: 0.9em;
-}
-.bar-skill {
-  width: 100%;
+
+/* Test phần progress */
+.progress{
+  background-color: #d8d8d8;
+  border-radius: 20px;
   height: 0.3em;
-  border-radius: 4px;
-  margin-top: 1%;
-  background-color: var(--rate-color);
-  position: relative;
+
 }
-.bar-skill:before {
-  width: 51%;
-  height: 100%;
-  border-radius: 4px;
-  content: "";
-  background-color: var(--main-color);
-  position: absolute;
+.progress-done{
+  background:var(--main-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:0;
+  height:100%;
+  opacity: 0;
+  transition: 1s ease ;
+  color:#fff;
+ 
+  
 }
-.profess-bar .drupal:before {
-  width: 80%;
-}
-.java:before {
-  width: 70%;
-}
-.html:before {
-  width: 70%;
-}
-.photoshop:before {
+/* .photoshop:before {
   width: 85%;
-}
+} */
 .profess-content {
   font-family: var(--title-font);
   color: var(--content-color);
@@ -918,6 +912,7 @@
 }
 .port-grid {
   width: 100%;
+
 }
 .port-grid-box {
   display: grid;
@@ -925,7 +920,7 @@
   grid-gap: 0.8em;
   justify-content: stretch;
   align-items: stretch;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(280px, auto);
   margin: 0.8em 0;
 }
 .grid-box {
@@ -936,20 +931,25 @@
   box-sizing: content-box;
   width: 100%;
 }
-
 .grid-box1 {
   grid-column: 1/3;
   grid-row: 1/3;
+  
 }
 .anh-inner{
   width: 100%;
   height: 100%;
   padding: 0;
   overflow: hidden;
-  background-color: red;
+  background-color: black;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+.anh-main{
+    width:100%;
+    height:100%;
 }
 
-.anh-inner > img {
+.anh-main > img {
   width: 100%;
   height: 100%;
   transition: 0.6s ease-in;
@@ -1010,7 +1010,18 @@
 .shadow-icon i:nth-child(2) {
   transition-delay: 0.2s;
 }
+/* Grid box thứ 2  */
+.port-grid-box2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.8em;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-auto-rows: minmax(280px, auto);
+  margin: 0.8em 0;
+}
 /* thay doi du lieu grid-box2 */
+
 .grid-box2 .anh-shadow .anh-shadow-inner {
   margin: 0;
 }
@@ -1024,26 +1035,6 @@
 .grid-box:hover .shadow-icon > i {
   transform: translateY(-5em);
 }
-
-/* -------------------------------------------------------------- */
-/* port-gird-box2 */
-.port-grid-box2 {
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
-  grid-gap: 0.8em;
-  justify-content: stretch;
-  align-items: stretch;
-  grid-auto-rows: minmax(350px, auto);
-  margin-top: 0.6em;
-}
-.port-grid-box2 {
-  position: relative;
-  padding: none;
-  overflow: hidden;
-  padding: 0.2em;
-  box-sizing: content-box;
-}
-
 .grid-small2:hover img {
   opacity: 0.5;
   transform: scale(1.2);
@@ -1088,20 +1079,28 @@
 .grid-small2:hover .shadow-icon i:nth-child(2) {
   transition-delay: 0.2s;
 }
+/* Thực hiện port3 */
+.port-grid-box3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.8em;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-auto-rows: minmax(280px, auto);
+  margin: 0.8em 0;
+}
 /* Port3 ---------------------------------------------------*/
-.grid-box7 {
+.grid-box4 {
   grid-column: 1/2;
   grid-row: 1/2;
+  opacity: 0.5;
 }
-
-.grid-box7 .anh-shadow-inner h2 {
-  font-size: 0.8em;
-}
-.grid-box8 {
+.grid-box5{
   grid-column: 1/2;
   grid-row: 2/3;
+  opacity: 0.5;
 }
-.grid-box9 {
+.grid-box6 {
   grid-column: 2/4;
   grid-row: 1/3;
 }
@@ -1352,6 +1351,7 @@
   filter: grayscale(100%);
   cursor: pointer;
   z-index: 8;
+ margin-right:0  !important; 
 }
 .skill-small > img:hover {
   filter: none;
@@ -2129,6 +2129,11 @@
     left: -38px;
   }
 }
+@media screen and (max-width:785px){
+  .timeline{
+    height:72%;
+  }
+}
 @media screen and (max-width: 767px) {
   .profile-item {
     display: flex;
@@ -2175,6 +2180,11 @@
   }
   .content {
     margin: 0.8em auto 0.5em auto;
+  }
+  #btn-setting-color{
+    height:20px;
+    width:20px;
+    padding:1.5em;
   }
 }
 @media screen and (max-width: 715px) {
@@ -2245,6 +2255,9 @@
     flex-direction: column;
     margin-bottom: -1.8em;
   }
+  .timeline{
+    height:90%;
+  }
   .edu {
     width: 100%;
     margin-bottom: 1.8em;
@@ -2254,6 +2267,7 @@
   }
   #edu-timeline {
     height: 90%;
+  
   }
 }
 
@@ -2275,5 +2289,9 @@
   }
   .profile-text {
     width: 95%;
+  }
+  .skill-small > img{
+    margin-left:5em;
+    background-color: red;
   }
 }

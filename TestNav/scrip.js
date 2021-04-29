@@ -20,7 +20,6 @@ function activeFunction(e) {
 //Lam phan setting color 
 function settingColorFunction(event){
   var x = event.clientX;
-  console.log(x)
   settingColor.style.transition="0.5s"
   if(x<50){
     settingColor.style.left="0px"
@@ -178,5 +177,13 @@ function changerColor24(){
   document.documentElement.style.setProperty('--main-color', '#a7d9a8');
 }
 
+setTimeout(()=>{
+  const progress=document.querySelectorAll(".progress-done")
+  const pro=document.querySelector(".progress")
+  progress.forEach((item)=>{
+    item.style.width=item.getAttribute('data-done')+"%"
+    item.style.opacity=1;
+  })
+ },1000)
 
-// Thay đổi chỗ finally , nếu chuyển sang đen
+
