@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  :root {
+    --main-font: "Open Sans", sans-serif;
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Roboto Condensed", sans-serif;
+    --main-color: rgb(104, 147, 255);
+  }
+  
+  body {
+    color: #292b2c;
+    background-color: #fff;
+  }
+  .blogpersonal {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    flex-direction: column;
+  }
+  .nav-logo{
+      background-color: red;
+  }
+  .nav-logo img{
+      width:80px;
+      height: 80px;
+      object-fit: contain;
+  }

@@ -1,0 +1,28 @@
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+.photo-wrap {
+    position: relative;
+  }
+  .photo-wrap:hover .photo-overlay {
+    width: 100%;
+  }
+  .photo-overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease-in;
+  }
+  .photo-text {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+  }
+  .photo-text a {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .photo-text a:hover {
+    color: var(--main-color);
+  }

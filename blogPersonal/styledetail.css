@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --hover-color:#6893ff;
+  --difference-color:#fafafa;
+  
+}
+*{
+  font-family: 'Roboto', sans-serif;
+}
+.carousel-item{
+    height: none;
+    background: #777;
+    color:#fff;
+  }
+  .carousel-item img{
+    height:80vh !important;
+    object-fit: cover;
+    
+  }
+  .nav-item {
+    border-bottom: 3px solid !important;
+    transition: all 0.3s ease-in-out;
+}
+  .nav-item:hover{
+    border-bottom: 3px solid var(--hover-color) !important;
+  }
+  /* Phan jumbotron */
+  .jumbotron{
+    padding-right:0px !important;
+    padding-left:0px !important;
+    color:#fff;
+    background-color:  #444 !important;
+  }
+  /* Phan duoi */
+  /* butn duoi blog search */
+  .input-group .btn {
+    position: relative;
+    z-index: 2;
+    border-radius: 0 15px 15px 0 !important;
+}
+.list-unstyled a{
+  text-decoration: none;
+}
+/* popular tags */
+.btn-sm {
+  padding: 6px 17px 7px 17px;
+  font-size: 0.7rem !important;
+  border-radius: 30px !important;
+  background: #6893ff !important;
+  border: 0;
+  color: #fff !important;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  margin: 0 5px 1rem 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* Blog - post title  */
+.blog-title{
+    font-weight:700 !important;
+    color:#333; 
+}
+.post-meta li{
+  padding-right:1em !important;
+}
+.post-meta li a i{
+  margin-right:5px; 
+}
+.blog-tetx{
+  font-weight: 300;
+}
+.blog-tilte-icon{
+  color: #666 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  transition:  0.5s ease-in;
+}
+.blog-tilte-icon i{
+  color:var(--hover-color);
+}
+.blog-tilte-icon:hover{
+  color:var(--hover-color) !important;
+}
+/* Phan leave a comment  */
+.form-title{
+   font-size: 0.7rem !important;
+}
+/* button post comment  */
+.btn-comment {
+  font-size: 0.7rem !important;
+  border-radius: 30px !important;
+  background: var(--hover-color) !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  transition: 0.3s ease-in;
+}
+.btn-comment:hover{
+  background: #0048ff !important;
+
+}
+.title-comment{
+  font-size: 1.3rem !important;
+  padding-bottom: 0 !important;
+  text-transform: uppercase;
+}
+/* hinh anh comment  */
+
+#blog-post section {
+  text-align: left;
+}
+
+.media-body{
+  font-weight: 300 !important;
+}
+.time-comment{
+  color: #777 !important;
+  font-size: 80% !important;
+}
+/* Phan footer */
+.footer p:hover{
+  color:var(--hover-color) !important; 
+}
+.pull-right a{
+  margin-left:1em;
+  color:#fff !important;
+  transition: 0.3s ease-in-out;
+}
+.pull-right a:hover{
+  color:var(--hover-color) !important; 
+}

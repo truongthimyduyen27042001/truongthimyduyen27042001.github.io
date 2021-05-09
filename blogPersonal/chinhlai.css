@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  :root {
+    --main-font: "Open Sans", sans-serif;
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Roboto Condensed", sans-serif;
+    --main-color: rgb(104, 147, 255);
+  }
+  
+  body {
+    color: #292b2c;
+    background-color: #fff;
+  }
+  .blogpersonal {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    flex-direction: column;
+  }
+  
+  /* Phaanf nava bar  */
+  /* TestNAv */
+  .navbar-brand img{
+    width:80px;
+    height: 80px;
+    object-fit: contain;
+    
+}
+/* Phaanf home-bg */
+#home-bg{
+    background-color: orange;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.home-bg {
+    min-height: 650px;
+    background-image: url("https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    background-color: #fff;
+}
+.home-inner {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    z-index: 3;
+    padding: 2em 0em;
+  }
+  .home-inner h1 {
+    font-size: 64px;
+    font-family: var(--title-font);
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-shadow: 0px 1px 1px #fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: auto;
+  }
+  #intro-text {
+    font-family: var(--text-font);
+    font-size: 19.2px;
+    padding: 2em 0em 1em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #intro-text h2 {
+    line-height: 35.2px;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px #fff;
+    position: relative;
+  }
+  #intro-text h2:after {
+    background-color: rgb(104, 147, 255);
+    bottom: 0px;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 60px;
+    position: absolute;
+    width: 100px;
+  }
+  .intro-myself {
+    margin-top: 20px;
+    padding: 0.8em 0.5em;
+    text-align: center;
+  }
+  /* Nút see my profile */
+  .seeMyProFile {
+    background-color: var(--main-color);
+    text-decoration: none;
+    width: fit-content;
+    padding: 0.8em 1.5em;
+    border-radius: 20px;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--text-font);
+    transition: 0.5s;
+    color: black;
+  }
+  .seeMyProFile:hover {
+    background: #0048ff;
+    -webkit-box-shadow: 0 0 0 2px #0048ff;
+    box-shadow: 0 0 0 2px #0048ff;
+    border-color: #0048ff;
+  }
