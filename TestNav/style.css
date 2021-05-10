@@ -1748,7 +1748,6 @@ line-height: 1.8;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  overflow: hidden;
 }
 /* Dang test */
 .icon-13-small {
