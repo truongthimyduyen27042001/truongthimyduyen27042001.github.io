@@ -25,7 +25,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Noto Sans HK", sans-serif;
+  font-family: var(--title-font);
 }
 .container {
   width: 100%;
@@ -535,9 +535,10 @@
   width: 75%;
   display: flex;
   justify-content: flex-end;
-  margin-right: 3%;
+  margin-right: 30px;
   box-sizing: border-box;
   z-index: 8;
+
 }
 .menu-nav {
   display: flex;
@@ -577,11 +578,18 @@
 .header-menu ul > li {
   margin: 0 10px;
 }
-
+/* Phan chu me nu  */
 .header-menu ul li > a {
   text-decoration: none;
   color: var(--content-color);
   position: relative;
+  font-weight: lighter;
+  font-size:13px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  display: inline-block;
+  color:#FFFFFFB3;
 }
 
 #setting-menu {
@@ -594,7 +602,7 @@
   position: absolute;
   color: var(--main-color);
   justify-content: center;
-  padding: 0.8em 1.2em;
+  padding: 0.7em 1em;
   border: 0.5px solid rgb(109, 99, 99);
   display: none;
 }
@@ -701,6 +709,7 @@
 }
 .profile-list {
   width: 100%;
+  margin-top:1em;
 }
 .clearfit {
   list-style: none;
@@ -709,17 +718,21 @@
 .profile-item {
   padding: 1% 0%;
   display: flex;
-  color: var(--a-color);
-  font-weight: 300;
+  line-height:20px;
 }
 .pro {
   width: 30%;
   color: var(--content-color);
-  font-size: 0.8em;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:black;
 }
+.profile-item span{
+  font-size:15px;
+  font-weight: 400;
 
-.pro-value {
-  width: 70%;
+  color:#9da0a7;
 }
 .vacation {
   color: #fff;
@@ -806,9 +819,10 @@
   width: 90%;
 }
 .profile-content-text > h3 {
-  color: #595757;
+  color: #000;
+  font-size: 20px;
   font-weight: 300;
-  word-spacing: 8px;
+line-height: 1.8;
 }
 #professional {
   display: flex;
@@ -824,6 +838,7 @@
   font-weight: 600;
   color: var(--content-color);
   cursor: auto;
+  text-align: center;
 }
 .profess-box {
   margin: 0;
@@ -833,6 +848,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .profess-bar {
   width: 45%;
@@ -841,8 +857,9 @@
 .bar-content {
   display: flex;
   justify-content: space-between;
-  color: rgb(117, 110, 110);
+  color: var(--tag-color);
   font-weight: 400;
+  font-size:14px;
 }
 
 /* Test phần progress */
@@ -850,7 +867,6 @@
   background-color: #d8d8d8;
   border-radius: 20px;
   height: 0.3em;
-
 }
 .progress-done{
   background:var(--main-color);
@@ -884,7 +900,7 @@
 .port-value {
   display: flex;
   width: fit-content;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   margin: auto;
 }
@@ -893,6 +909,8 @@
   margin: 3px 20px;
   padding: 0.8em 0em;
   font-size:13px;
+  color:#000;
+  
 }
 .port-line {
   width: 29%;
@@ -1179,7 +1197,7 @@
   width: 46%;
   text-align: center;
   position: relative;
-  box-shadow: 2px 2px 10px var(--shadow-color);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .ex-inner > h4 {
   font-weight: 700;
@@ -1203,11 +1221,16 @@
 .ex-inner > h3 {
   font-weight: 500;
   margin-bottom: 0.5em;
-  color: var(--content-color);
+  font-size:22px;
+  font-weight: 400;
+  line-height: 1.1;
+  color:#414141;
 }
 .ex-inner > h5 {
-  font-weight: 300;
-  color: var(--a-color);
+  font-weight: 400;
+  color:#878787;
+  font-size:13px;
+  line-height: 1.1;
   margin-bottom: 1.5em;
   box-sizing: border-box;
 }
@@ -1216,8 +1239,9 @@
   margin: 1.5em auto;
   text-align: left;
   margin-bottom: 2em;
-  color: var(--a-color);
   font-weight: 300;
+  font-size:16px;
+  color:#757575;
 }
 .light-ex {
   background-color: var(--main-color);
@@ -1249,7 +1273,7 @@
   background-color: #fff;
   position: relative;
   border-radius: 3px;
-  box-shadow: 2px 2px 10px var(--shadow-color);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .edu:before {
   width: 10px;
@@ -1335,6 +1359,7 @@
   margin-top: 2em;
   justify-content: center;
   align-items: center;
+ 
 }
 .items .slick-prev {
   display: none !important;
@@ -1342,9 +1367,8 @@
 .items .slick-next {
   display: none !important;
 }
-
 .skill-small > img {
-  margin: 0 1em;
+  margin: 0 15em;
   min-width: 80px;
   object-fit: contain;
   color: var(--a-color);
@@ -1402,7 +1426,7 @@
   background-color: #fff;
   padding: 2.5em 2em;
   display: flex !important;
-  box-shadow: 2px 2px 10px var(--shadow-color) !important;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .reference-inner-icon {
   color: var(--main-color);
@@ -1419,10 +1443,14 @@
 .reference-inner-comment > h3 {
   width: 95%;
   font-weight: 400;
+  line-height: 1.4;
   margin-bottom: 2em;
+  font-size: 18px;
   cursor: text;
+  color:#3D4451;
   padding-bottom:1.5em;
-  border-bottom:1px solid var(--border-color);
+  border-bottom:1px solid #dddad9;
+  font-family: var(--title-font);
 }
 .reference-inner-person {
   display: flex;
@@ -1434,15 +1462,23 @@
   flex-direction: column;
   justify-content: center;
   cursor: text;
+
 }
 .references-text > p {
-  font-weight: 600;
-  font-size: 1.3em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  margin-bottom:3px;
   cursor: text;
+  color:#757575;
 }
 #special-text {
-  color: var(--border-color);
-  font-size: 0.8em;
+  margin-top:3px;
+  color:#d0d0d0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 .references-button {
   background-color: red;
@@ -1475,7 +1511,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 1px 5px rgb(175, 166, 166);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .box10-top {
   width: 100%;
@@ -1524,7 +1560,7 @@
 #box10-center-name {
   font-size: 1.2em;
   font-weight: 700;
-  color: #373b42;
+  color: var(--tag-color);
   position: relative;
 }
 #new {
@@ -1614,7 +1650,7 @@
   margin: 0 0.5em;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 2px 2px 20px rgb(204, 202, 202);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
   position: relative;
 }
 .blog-time {
@@ -1653,7 +1689,7 @@
   margin: 1.5em 0;
   font-size: 1.1em;
   transition: 0.2s ease;
-  color: var(--content-color);
+  color:var(--tag-color);
 }
 .blog-name:hover {
   color: var(--main-color);
@@ -1662,14 +1698,16 @@
   display: flex;
   width: 40%;
   justify-content: space-around;
+
 }
 .tag-small {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 300;
-  color: rgb(121, 119, 116);
+  color: #757575;
   margin-bottom: 1em;
+  font-size:13px;
 }
 .tag-small > i {
   color: var(--border-color);
@@ -1686,7 +1724,7 @@
   background-color: #fff;
   border: none;
   padding: 3em 3em;
-  box-shadow: 2px 2px 20px rgb(204, 202, 202);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
   color: var(--refrerence-color);
 }
 /* my interest */
@@ -1696,21 +1734,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 2px 20px rgb(204, 202, 202);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .text-13 {
   width: 90%;
   text-align: center;
-  margin-bottom: 3.5em;
+  margin-bottom: 2.5em;
   color: var(--refrerence-color);
 }
+/* Phan icon 13 */
 .icon-13 {
-  width: 60%;
   color: var(--main-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
+/* Dang test */
 .icon-13-small {
   display: flex;
   flex-direction: column;
@@ -1719,10 +1759,10 @@
   border: 0.2px solid rgb(228, 225, 225);
   border-radius: 2px;
   position: relative;
-  padding: 0.3em;
   margin-right: 0.5em;
   box-sizing: border-box;
   cursor: pointer;
+
 }
 .icon-13-small > i {
   padding: 1em 1em;
@@ -1764,6 +1804,7 @@
   background-color: #fff;
   overflow: visible;
   display: flex;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .box-14-left {
   width: 35%;
@@ -1776,7 +1817,7 @@
   font-weight: 300;
 }
 .box-14-left > p {
-  width: 100px;
+  width: 40%;
   height: 60px;
   border: 2px solid var(--main-color);
   background-color: var(--main-color);
@@ -1884,7 +1925,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 0px 5px rgb(155, 153, 153);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .box-15-left h2 {
   width: 80%;
@@ -1962,27 +2003,30 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: blue;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
   overflow: hidden;
   padding-top: 0;
 }
 .box15-txtright {
   width: 100%;
   background-color: #fff;
-  padding: 2em 0 6em 1em;
-  color: var(--nen-color);
+  padding: 2em 1em 6em 1em;
+color:var(--title-font);
+font-weight: 400;
 }
 .box15-txtright p {
-  font-size: 0.7em;
   width: fit-content;
   display: flex;
   justify-content: flex-start;
   margin: 0.3em 1em;
+  font-size:13px;
+
+  text-transform: uppercase;
+  color:var(--tag-color);
 }
 .box15-txtright span {
   margin-left: 2em;
-  font-weight: 400;
-  font-size: 1.3em;
+  font-size:16px;  
 }
 .box15-map {
   background-color: whitesmoke;
@@ -2110,6 +2154,7 @@
   }
   #small-contact {
     width: 50%;
+   
   }
   #choose-color {
     width: 8em;
@@ -2184,6 +2229,8 @@
     width:20px;
     padding:1.5em;
   }
+  /* test phan icon */
+ 
 }
 @media screen and (max-width: 715px) {
     .reference-inner-comment {
@@ -2191,20 +2238,28 @@
       }
 }
 @media screen and (max-width: 670px) {
-  .blog-inner {
-    display: flex;
-    flex-direction: column;
-  }
-  .blog-small {
-    margin-bottom: 2em;
-  }
-  .blog-img > img {
-    width: 100%;
-  }
-  .blog-time {
-    top: 5%;
-    left: 85%;
-  }
+    .blog-inner {
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-small {
+      margin-bottom: 2em;
+    }
+    .blog-img > img {
+      width: 100%;
+    }
+    .blog-time {
+      top: 5%;
+      left: 85%;
+    }
+    /* test phan my interest */
+      .icon-13-small {
+        margin-right: 0.3em;
+      }
+      .icon-13-small > i {
+        padding: 0.8em;
+  
+      }
 }
 @media screen and (max-width: 615px) {
   .edu-exp .right {
@@ -2265,8 +2320,12 @@
   }
   #edu-timeline {
     height: 90%;
-  
   }
+  /* Phaanf chuwx cho reference ? */
+  .reference-inner-comment > h3{
+    width:90%;
+  }
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -2287,5 +2346,89 @@
   }
   .profile-text {
     width: 95%;
+  }
+  /* phan my interested */
+  .icon-13-small {
+    margin-right: 0.3em;
+  }
+  .icon-13-small > i {
+    padding: 0.5em;
+
+  }
+  .reference-inner-comment > h3{
+    width:80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* phan my interested */
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev{
+    display: none !important;
+  }
+  .reference-inner-comment > h3{
+    width:100%;
+    text-align: center;
+    position:relative;
+  }
+  .reference-inner-icon{
+    display: none;
+  }
+  .box-14{
+    flex-direction: column;
+  }
+  .box-14-left{
+    width: 100%;
+  }
+  .box-14-left > p{
+    display: none;
+  }
+  .box-14-right{
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+  }
+  .time{
+    margin:auto;
+  }
+
+}
+@media screen and (max-width: 415px) {
+  /* phan my interested */
+  .icon-13-small {
+    margin-right: 0.3em;
+  }
+  .icon-13-small > i {
+    padding: 0.2em;
+  }
+}
+@media screen and (max-width: 415px) {
+  /* phan my interested */
+  .icon-13-small {
+    margin-right: 0.3em;
+  }
+  .icon-13-small > i {
+    padding: 0.2em;
+  }
+}
+@media screen and (max-width: 330px) {
+  /* phan my interested */
+  .icon-13-small {
+    margin-right: 0.1em;
+  }
+  .icon-13-small > i {
+    padding: 0.1em;
+  }
+  .box15-txtright p {
+    width:80%;
+    overflow: hidden;
+  }
+  #map{
+   
+    width:500px;
+  }
+  #satellite {
+    width:500px;
   }
 }

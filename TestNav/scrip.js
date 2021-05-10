@@ -9,6 +9,9 @@ let btnMenu=document.querySelector("#menu-reposive")
 let menuItem=document.querySelector(".mobile-nav")
 let icon1=document.querySelectorAll(".extend .icon1")
 let extend=document.querySelector(".extend .icon")
+let btnSetColor=document.getElementById("btn-setting-color")
+
+
 function activeFunction(e) {
    var elems = document.querySelector(".active");
     if(elems !==null){
@@ -17,7 +20,7 @@ function activeFunction(e) {
   e.target.className = "active";
    
 }
-//Lam phan setting color 
+//Lam phan setting color , phần đẩy ra đẩy vào của setting color
 function settingColorFunction(event){
   var x = event.clientX;
   settingColor.style.transition="0.5s"
@@ -25,12 +28,23 @@ function settingColorFunction(event){
     settingColor.style.left="0px"
   }
   if(x>50){
-    settingColor.style.left="-250px";
+    console.log(window.screen.width)
+    if(window.screen.width>992){
+      settingColor.style.left="-250px";
+    }
+    else{
+      settingColor.style.left="-230px";
+    }
+    
   }
 }
+
+//để cotact chạy ra nhanh hơn và bg chuyển màu mượt hơn 
+contact.style.transition="0.5s";
+bodi.style.transition="0.3s"
+
 // kiểm soát phần contact small
 function showSmallContact(){
-  contact.style.transition="0.5s";
   contact.style.right="0%"
   bodi.style.transition="0.2s"
   bodi.style.backgroundColor="#000"
@@ -38,14 +52,10 @@ function showSmallContact(){
   extend.classList.add("blackChange") 
 }
 // Tắt phần contact small 
+contact.style.right="-50%"
 function closeSmallContact(){
-  let contact=document.querySelector("#small-contact")
-  let bodi=document.querySelector(".container");
-  contact.style.transition="0.8s";
-  contact.style.right="-50%"
-  bodi.style.transition="0.3s"
+  contact.style.right="-70%"
   bodi.style.backgroundColor="var(--bg-color)"
-  bodi.style.opacity="1"
   extend.classList.remove("blackChange") 
 }
 // Kiểm soát phần menu-small-item

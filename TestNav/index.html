@@ -299,7 +299,7 @@
                     <h6>SHOWHEADER BACKGROUND IMAGE</h6>
                 </div>
             </div>
-            <button id="btn-setting-color" onclick="settingColorFunction(event)">
+            <button id="btn-setting-color" data-left="-230px" onclick="settingColorFunction(event)">
                 <i class="fas fa-cog"></i>
             </button>
 
@@ -1003,9 +1003,7 @@
                                 <i class="fas fa-quote-right"></i>
                             </div>
                             <div class="reference-inner-comment">
-                                <h3>I have known Robert Smith for 10 years as web developer. I can confirm that he is a
-                                    man of great integrity, is extremely dedicated to his family and work, and is
-                                    entirely peace-loving.</h3>
+                                <h3>I confirm that New Company Ltd has been a customer of ours since 1998, during which time they have always made payments reliably, in full and on time.</h3>
                                 
                                 <div class="reference-inner-person">
                                     <img src="https://rscard.px-lab.com/html/img/uploads/rs-avatar-60x60.jpg"
@@ -1045,7 +1043,7 @@
                                 <i class="fas fa-quote-right"></i>
                             </div>
                             <div class="reference-inner-comment">
-                                <h3>I confirm that I have dealt with New Company Ltd since 1998. Their work has been a major factor in our website's success, helping it to become one of the most visited resources of its kind on the Internet.</h3>
+                                <h3>I confirm that New Company Ltd has been a customer of ours since 1998, during which time they have always made payments reliably, in full and on time.</h3>
                                
                                 <div class="reference-inner-person">
                                     <img src="https://rscard.px-lab.com/html/img/uploads/rs-avatar-60x60.jpg"
@@ -1216,6 +1214,7 @@
                             exhibitions and events both on and off campus.
                             I also play the piano to grade 8 standard.
                         </div>
+                        
                         <div class="icon-13">
                             <div class="icon-13-small">
                                 <i class="fas fa-biking"></i>
@@ -1261,6 +1260,7 @@
                             </div>
 
                         </div>
+
                     </div>
                 </div>
                 <!-- ket thuc my interest -->
@@ -1501,7 +1501,7 @@
         autoplaySpeed: 1000,
         responsive: [
             {
-            breakpoint: 1216,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -1516,7 +1516,14 @@
             }
             },
             {
-            breakpoint: 336,
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 400,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
