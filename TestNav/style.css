@@ -2153,6 +2153,7 @@ font-weight: 400;
   }
   #small-contact {
     width: 50%;
+    transition:0.5s ease-in !important;
    
   }
   #choose-color {

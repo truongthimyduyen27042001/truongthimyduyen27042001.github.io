@@ -28,7 +28,7 @@ function settingColorFunction(event){
     settingColor.style.left="0px"
   }
   if(x>50){
-    console.log(window.screen.width)
+   
     if(window.screen.width>992){
       settingColor.style.left="-250px";
     }
@@ -45,8 +45,23 @@ bodi.style.transition="0.3s"
 
 // kiểm soát phần contact small
 function showSmallContact(){
+
+  //mo contact 
+  
+  console.log( contact.offsetWidth)
+  //thay doi do rong phu thuoc vao man hinh
+  console.log("thay doi do rong man hinh trong show contact")
+  if(window.screen.width<450){
+    console.log("thay doi thanh 80")
+    contact.style.width="80%"
+  }
+  else{
+    console.log("thay doi thanh 50")
+    contact.style.width="50%"
+  }
+
   contact.style.right="0%"
-  bodi.style.transition="0.2s"
+  bodi.style.transition="0.3s"
   bodi.style.backgroundColor="#000"
   bodi.style.opacity="0.7" 
   extend.classList.add("blackChange") 
@@ -54,7 +69,8 @@ function showSmallContact(){
 // Tắt phần contact small 
 contact.style.right="-50%"
 function closeSmallContact(){
-  contact.style.right="-70%"
+  contact.style.transition="0.3s"
+  contact.style.right="-100%"
   bodi.style.backgroundColor="var(--bg-color)"
   extend.classList.remove("blackChange") 
 }
@@ -196,4 +212,5 @@ setTimeout(()=>{
   })
  },1000)
 
+// Nếu độ rộng màn hình là 500 thì set lại width cho thằng contact 
 
