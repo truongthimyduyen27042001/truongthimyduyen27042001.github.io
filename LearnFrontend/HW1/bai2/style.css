@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Playball&display=swap');
+*{
+    padding:0;
+    margin:0;
+   
+}
+.container-fluid{
+    width:100vw;
+    height:100vh;
+    background-color: pink;
+    padding-top:5em;
+}
+.services-inner{
+    width:45%;
+    background-color: #61a1bc;
+    padding: 30px 80px;
+}
+h1{
+    font-family: 'BenchNine', sans-serif;
+    text-align: center;
+    font-size:4em !important;
+}
+.row {
+    margin-top:10px;
+    padding:15px 20px;
+    background-color:#e35885 ;
+    color:#fff !important;
+}
+.choose{
+    background-color: #8ec16d;
+}
+.notchoose{
+    background-color:#e35885;
+}
+
+.title{
+    background-color: transparent;
+    padding:0px;
+    margin-top:0px !important;
+}
+hr{
+    height:2px !important;
+    background-color: #95bfd1 !important;
+}
+.total{
+    background-color: transparent;
+}
