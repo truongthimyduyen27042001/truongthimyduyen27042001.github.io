@@ -2,23 +2,23 @@ new Vue({
     el: '#app',
     
   data:{
-    activeName: 'nothing',
+    activeName: 'Nothing',
       arr:[
       
           {
-              name:'Home',
+              name:'HOME',
               active:true
           },
           {
-              name:'Projects',
+              name:'PROJECTS',
               active:false
           },
           {
-              name:'Services',
+              name:'SERVICES',
               active:false
           },
           {
-              name:'Contact',
+              name:'CONTACT',
               active:false
           }
       ]
