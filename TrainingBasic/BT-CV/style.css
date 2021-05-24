@@ -1,0 +1,343 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100%;
+    height:1200px;
+    background-color:none;
+    position: relative;
+    
+}
+.bg{
+    width:100%;
+    height:500px;
+    background-image: url("https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    opacity: 0.8;
+    z-index: 0;
+    background-size: 100vw 80vh;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.navbar{
+    width:100%;
+    height:70px;
+    background-color:none;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    position:fixed;
+    top:0;
+    left: 0;
+    
+}
+.name{
+    width:40%;
+    height:100%;
+    background-color:none;
+    display :flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Changa One', cursive;
+    
+}
+
+.name >h1{
+    margin-left: 15px;
+    font-size:35px;
+    color:#9a9da2;
+    cursor:pointer;
+}
+#name1{
+    color:#07cb79;
+}
+.intro{
+    width:55%;
+    height:100%;
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:#696e80  ;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right:0;
+  
+    
+}
+.info-intro{
+    width:auto;
+    height:50px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    cursor:pointer;
+    
+}
+.intro > p{
+    width:auto;
+    height:40px;
+    background-color: none;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    box-sizing: margin-box;
+    transition : width 2s;
+    font-family: 'Rubik', sans-serif;
+}
+.intro>p:hover {
+    border-bottom: 3px solid #07cb79;
+}
+.more-intro > i{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:35px;
+    height:35px;
+    border : 1px solid #d9d9d9;
+}
+
+.pa:hover >hr{
+    opacity: 1;
+}
+.navbar .introl > p{
+    border:5px solid #fff;
+}
+.setting-color{
+    width: 55px;
+    height:55px;
+    background-color: #fff;
+    position:fixed;
+    top:150px;
+    border-radius: 0px 2px 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setting-color > i{
+    font-size: 25px;
+}
+.box{
+    width:900px;
+    height:500px;
+    background-color: #fff;
+    position: absolute;
+    top:150px;
+    left:300px;
+    display:flex;
+    align-items: center;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.box .box-first {
+    margin-left:40px;
+    margin-right:27px;
+    margin-top:30px;
+    
+    
+}
+.box-first{
+    width:100%;
+    height:390px;
+    background-color: none;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-first .anh{
+    width:30%;
+    height:85%;
+    background-color: red;
+    display: flex;
+    margin:0px;
+    justify-content: center;
+    align-items: center;
+}
+.anh img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.info{
+    width:60%;
+    height:85%;
+    background-color: none;
+    box-sizing: border-box;
+    margin-left:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.info-before{
+    width:100%;
+    height:40%;
+    background-color: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+
+    
+}
+.hello{
+    width:70px;
+    height:30px;
+    background-color: #07cb79;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    color:#fff;
+    font-size: 18px;
+    border : 2px solid #07cb79;
+}
+
+.hello::before{
+    width:10px;
+    height:10px;
+    content:" ";
+    background-color: #07cb79;
+    position: absolute;
+    top:80%;
+    left:20%;
+    transform: rotate(60deg);
+}
+.name-job{
+    width:350px;
+    height:90px;
+    background-color: none;
+    color:#646a74;
+}
+.name2{
+    width:100%;
+    height:60px;
+    background-color: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size:40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+#robert{
+    padding-left:10px;
+    font-family: 'Hind', sans-serif;
+    font-size:50px;
+   
+}
+.job{
+    width:100%;
+    height:30px;
+    background-color: none;
+    font-size:20px;
+    color:#646a74;
+}
+.info-after{
+    width:85%;
+    height:60%;
+    background-color: none;
+    padding-top:10px;
+   
+}
+
+.infor1{
+    width:100%;
+    height:17%;
+    background-color: none;
+    display:flex;
+    
+    
+}
+.infor1-a{
+    width:30%;
+    height:100%;
+    background-color: none;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.infor1-b{
+    width:70%;
+    height:100%;
+    background-color: none;
+    color:#bdbec3;
+    display:flex;
+    align-items: center;
+    font-size:17px;
+}
+.on-vacation{
+    width:110px;
+    height:30px;
+    background-color: #07cb79;
+    border-radius: 3px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .box-last{
+    width:100%;
+    height:15%;
+    background-color: #07cb79;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.box-last .icon{
+    width: 50%;
+    height:100%;
+    background-color: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon .icon1{
+    width: 40px;
+    height:40px;
+    background-color: #07cb79;
+    display: flex;
+    color:#fff;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+}
+.icon1:hover{
+    background-color: #06b66c;
+}
+.background{
+    width:100%;
+    height:500px;
+    background-color: none;
+}
+.introduce{
+    width:100%;
+    height:300px;
+    background-color: yellow;
+}

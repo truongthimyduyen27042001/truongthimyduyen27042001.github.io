@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <title>BTVN2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid" id="app">
+      <h1 class="text-center">ToDo List</h1>
+      <div class="container content">
+        <div class="row">
+          <div
+            class="col-12 col-sm-11 col-md-11 col-lg-11"
+            style="padding-left: 0 !important"
+          >
+            <input
+              v-model="newLabel"
+              type="text"
+              class="form-control addNew"
+              placeholder="What needs to be done ?"
+              aria-label="What needs to be done ?"
+              aria-describedby="button-addon2"
+            />
+            <hr />
+          </div>
+          <div
+            class="col-12 col-sm-1 col-md-1 col-lg-1"
+            v-on:click="addList(newLabel)"
+          >
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container content"> 
+        <div class="row list-small" v-for="item in list">
+          <div class="col-12 col-sm-10 col-md-10 col-lg-10">
+            <input type="checkbox" v-model="item.done" />
+            <label
+              for=""
+              v-model="item.label"
+              :class="item.done?'text-decoration-line-through':''" 
+              >{{item.label}}</label
+            >
+            <input type="text" class="form-control" placeholder="What needs to be done ?" v-model="editLabel" :style="item.edit?'display:block':'display:none'">
+          </div>
+         <div class="icon iList col-12 col-sm-2 col-md-2 col-lg-2" :style="item.edit?'display:none':'display:flex'">
+              <div class="icon icon-edit" v-on:click="goEdit(item)">
+                <i class="fas fa-edit"></i>
+              </div>
+              <div class="icon icon-delete"  v-on:click="deleteItem(item)">
+                <i class="fas fa-trash-alt"></i>
+              </div>
+         </div>
+         <div class="icon col-12 col-sm-2 col-md-2 col-lg-2" :style="item.edit?'display:flex':'display:none'">
+            <div class="icon icon-edit" v-on:click="edit(item)">
+                <i class="fas fa-check"></i>
+            </div>
+            <div class="icon icon-delete" v-on:click="item.edit=false">
+                <i class="fas fa-minus"></i>
+            </div>
+       </div>
+        </div>
+      </div>
+      <!-- model box -->
+      <!-- test modal -->
+  
+      <!-- end test modal -->
+    </div>
+   
+    <script src="main.js"></script>
+  </body>
+</html>

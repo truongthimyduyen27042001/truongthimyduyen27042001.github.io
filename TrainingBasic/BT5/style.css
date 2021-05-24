@@ -1,0 +1,384 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100%;
+    height:900px;
+    background-color: #170f23;
+    transition:translateX(300px);
+    margin-top:0px;
+    padding:0px;
+
+}
+.content{
+    width:100%;
+    height:80px;
+    background-color: #170f23;
+    font-family: 'Lato', sans-serif;
+    font-size:22px;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+
+.content >p {
+    margin-left:20px;
+    margin-bottom: 5px;
+}
+.more-content{
+    margin-right:20px;
+    
+    font-size:22px;
+    font-family: 'Shippori Mincho B1', serif;
+
+}
+.more-content > i {
+    padding-left:10px;
+}
+#ikon1{
+    opacity:0.2;
+}
+#ikon2{
+    opacity: 0.8;
+}
+#ikon2:hover{
+    
+    opacity:1;
+}
+.song{
+    width:100%;
+    height:280px;
+    background-color: #170f23;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.song1{
+    width:16%;
+    height:90%;
+    background-color: none;
+    margin-left:20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.anh{
+    width:200px;
+    height:200px;
+    border-radius: 10px;
+    background-color: black;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.anh .bg{
+    width:200px;
+    height:200px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+.anh:hover .bg{
+    transform:scale(1.2);
+}
+.anh .shadow{
+    width:200px;
+    height:200px;
+    background-color: black;
+    position:relative;
+    top:-102%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    visibility: hidden;
+}
+.anh:hover .shadow{
+    visibility: visible;
+}
+.shadow .icon{
+    width:60%;
+    height:30%;
+    background-color: black;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:17px;
+}
+#play{
+    font-size:30px;
+}
+.song1 .name-song{
+    width:80%;
+    height:20%;
+    background-color: none;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    color:#fff;
+    font-size:18px;
+}
+.name-song:hover{
+    color:#670591;
+}
+.new{
+    width:100%;
+    height:350px;
+    background-color: none;
+}
+.new .new-first{
+    width:100%;
+    height:65%;
+    background-color: #170f23;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.newsong{
+    width:470px;
+    height:200px;
+    background-color: #2f2739;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left:10px;
+    cursor: pointer;
+   
+}
+.song2{
+    width:185px;
+    height:185px;
+    background-color: none;
+    margin-left: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.anh2{
+    width:185px;
+    height:185px;
+    border-radius: 10px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    
+}
+.anh2 > img{
+    border-radius: 10%;
+}
+.song2:hover .anh2{
+    transform:scale(1.2);
+}
+.shadow-anh2{
+    width:185px;
+    height: 185px;
+    background-color: black;
+    position: absolute;
+    top:461px;
+    border-radius: 10px;
+    opacity: 0.5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.icon-anh2{
+    width:60%;
+    height:30%;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.song2:hover .shadow-anh2{
+    visibility: visible;
+}
+.info{
+    width:240px;
+    height:80%;
+    background-color: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:#fff;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+}
+.name{
+    width:240px;
+    height:80px;
+    background-color :none;
+    
+}
+.info >p{
+    padding-bottom:8px;
+    
+}
+#name-song{
+    font-size:20px;
+    padding-left:8px;
+
+}
+#name-single{
+    color:#615c69;
+    padding-left:8px;
+}
+#name-single:hover{
+    color:#670591;
+}
+.rank{
+    width:240px;
+    height:60px;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#5f5967;
+    font-size:15px;
+}
+.rank > p{
+    padding-left:10px;
+    padding-right: 10px;
+}
+#top{
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 45px;
+   
+}
+.newsong-spe{
+    width:470px;
+    height:95%;
+    background-color: #2f2739;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left:10px;
+    cursor: pointer;
+    color:#670591;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+}
+.new-last{
+    width:100%;
+    height:120px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.wrap{
+    width:33%;
+    height:100px;
+    background-color: none;
+    margin:10px;
+}
+.oldsong{
+
+    width:470px;
+    height:95%;
+    background-color: #2f2739;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left:10px;
+    cursor: pointer;
+    
+    
+}
+.song3{
+    width:70px;
+    height:70px;
+    background-color: none;
+    margin-left: 20px;
+    overflow: visible;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow:hidden;
+    
+    
+}
+.anh3{
+    width:68px;
+    height:68px;
+    overflow:hidden;
+}
+.song3 > img {
+    width:70px;
+    height:70px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.shadow-old{
+    width:70px;
+    height:70px;
+    background-color: black;
+    position: relative;
+    top:-105%;
+    border-radius: 5px;
+    opacity: 0.5;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:#fff;
+
+}
+.oldsong:hover .shadow-old{
+    visibility: visible;
+}
+.song3:hover >img{
+    transform: scale(1.2);
+}
+.shadow-old > i {
+    opacity: 0.8;
+}
+.info-song3{
+    width:250px;
+    height:70px;
+    background-color: none;
+    font-family: 'Rubik', sans-serif;
+    color:#fff;
+    padding-left:10px;
+    
+}
+#single-song3{
+    font-size:13px;
+    color:#736e7a;
+}
+
+.icon-song3{
+    width:100px;
+    height:70px;
+    background-color: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:#fff;
+    font-size:15px;
+    visibility: hidden;
+
+    
+}
+.icon-song3 > i{
+    padding-left:10px;
+    opacity: 0.8;
+}
+.oldsong:hover .icon-song3{
+    visibility: visible;
+}

@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color: #47a347;
+}
+#app {
+  padding-top: 30px;
+}
+.content {
+  width: 50% !important;
+  padding-top: 20px;
+  margin: auto !important;
+}
+.content h1 {
+  color: #2e3f51;
+}
+h2 {
+  color: #a6a9b1;
+}
+.icon-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i {
+  background-color: #f6f6f6;
+  padding: 17px 23px;
+  color: #218b26;
+}
+
+hr {
+  height: 3px !important;
+  background-color: var(--main-color) !important;
+}
+.list-small {
+  padding: 10px 5px;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.content:nth-child(3) {
+  padding-top: 10px;
+}
+.icon-edit i {
+  padding: 13px 15px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--main-color);
+}
+.icon-delete i {
+  padding: 13px 15px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff0000;
+}
+.addNew {
+    border: none !important;
+  }
+input:focus {
+    box-shadow: none !important;
+}
+button:focus{
+    box-shadow:none !important;
+}
+.icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notShow{
+  display: none;
+}
+
