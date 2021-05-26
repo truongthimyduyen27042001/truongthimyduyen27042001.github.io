@@ -22,22 +22,22 @@ new Vue({
         },
         {
             label:'Làm bài tập Java',
-            done:true,
+            done:false,
             edit:false
         },
         {
             label:'Xem cá hồi hoang',
-            done:true,
+            done:false,
             edit:false
         },
         {
-            label:'Xuống nhà nội',
-            done:true,
+            label:'Edit video',
+            done:false,
             edit:false
         },
         {
             label:'Đi chơi',
-            done:true,
+            done:false,
             edit:false
         },
         {
@@ -55,7 +55,8 @@ new Vue({
             }
             if(check==false) this.list.push({
                 label:newLabel,
-                done:false
+                done:false,
+                edit:false
             })
             else{
                 alert('da ton tai')

@@ -56,10 +56,12 @@
       <div class="container content"> 
         <div class="row list-small" v-for="item in list">
           <div class="col-12 col-sm-10 col-md-10 col-lg-10">
-            <input type="checkbox" v-model="item.done" />
+            <input type="checkbox" :checked="item.done"  v-model="item.done"
+            />
             <label
               for=""
               v-model="item.label"
+              v-on:click="item.done=!item.done"
               :class="item.done?'text-decoration-line-through':''" 
               >{{item.label}}</label
             >
